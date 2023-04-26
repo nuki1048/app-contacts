@@ -1,0 +1,75 @@
+.search {
+  &__block {
+    &-mainInput {
+      position: relative;
+      input {
+        width: 256px;
+        height: 36px;
+        border: none;
+        background: #2c2c2e;
+        border-radius: 10px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #878b95;
+        padding: 8px 0 8px 37px;
+      }
+      &::after {
+        content: "";
+        width: 16px;
+        height: 16px;
+        display: block;
+        position: absolute;
+        left: 11px;
+        top: 9px;
+        background: url("../icons/contacts/searchIcon.svg") center
+          (center/ cover) no-repeat;
+      }
+    }
+    &-addBtn,
+    &-moreBtn {
+      padding: 15px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 37px;
+      height: 37px;
+      background: #4f4f4f;
+      mix-blend-mode: normal;
+      // opacity: 0.3;
+      border-radius: 10px;
+      border: none;
+      color: #ffffff;
+      transition: 0.2s all;
+      &:hover {
+        background: darken($color: #4f4f4f, $amount: 5);
+      }
+    }
+    &-addBtn {
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 12px;
+        height: 2px;
+        background: #ffffff;
+        left: 50%;
+        border-radius: 15px;
+        transform: translateX(-50%) rotate(90deg);
+      }
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 12px;
+        height: 2px;
+        background: #ffffff;
+        border-radius: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

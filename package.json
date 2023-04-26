@@ -4,7 +4,8 @@
   "description": "My frontend project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"json-server --watch db.json\" \"gulp\""
   },
   "author": "Yur1",
   "license": "ISC",
@@ -12,7 +13,12 @@
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
     "browser-sync": "^2.27.11",
+    "concurrently": "^8.0.1",
     "del": "^6.0.0",
+    "eslint": "^8.39.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
@@ -31,6 +37,7 @@
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^10.0.1",
+    "json-server": "^0.17.3",
     "sass": "^1.57.1",
     "typescript": "^4.9.4"
   }

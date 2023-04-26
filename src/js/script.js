@@ -14,6 +14,10 @@ try {
           .querySelector(".main__screen")
           .classList.add("animate__fadeIn");
       }, 500);
-    } catch (error) {}
+    } catch (error) {
+      /* empty */
+    }
   }, 2000);
-} catch (error) {}
+} catch (error) {
+  /* empty */
+}

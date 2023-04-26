@@ -1,0 +1,64 @@
+.favorites {
+  &__card {
+    position: relative;
+    min-width: 134px;
+    padding: 17px;
+    min-height: 148px;
+    display: flex;
+    flex-direction: column;
+    //  justify-content: center;
+    align-items: flex-start;
+    background: #1c1c1e;
+    box-shadow: 0px 20px 46px rgba(0, 0, 0, 0.1);
+    border-radius: 14px;
+    &_avatar {
+      width: 34px;
+      height: 34px;
+      border-radius: 100%;
+      object-fit: cover;
+    }
+    &_title {
+      cursor: pointer;
+      margin-top: 8px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0.38px;
+    }
+    &_telephone {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 18px;
+      letter-spacing: -0.08px;
+      color: rgba(235, 235, 245, 0.5);
+      text-decoration: none;
+    }
+    &_actions {
+      margin-top: 6px;
+      display: flex;
+      width: 82px;
+      align-items: center;
+      justify-content: space-between;
+      .actions {
+        &__callBtn,
+        &__messageBtn {
+          width: 37px;
+          height: 37px;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+        &__callBtn {
+          background: rgba(52, 199, 89, 0.2);
+        }
+        &__messageBtn {
+          background: rgba(0, 122, 255, 0.2);
+        }
+      }
+    }
+  }
+}

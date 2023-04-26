@@ -1,0 +1,186 @@
+.contacts {
+  &__keypad {
+    margin-top: 65px;
+    // display: flex;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &_input {
+      background: #000;
+      color: #fff;
+      width: 300px;
+      height: 100px;
+      border: none;
+      padding: 0 100px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 43px;
+      text-align: center;
+      letter-spacing: -0.165px;
+    }
+    &_grid {
+      width: 281px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 25px 16px;
+      .call {
+        grid-column: 2;
+        background: #4cd964;
+      }
+    }
+  }
+  &__bottomActions {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 95px;
+    padding: 23px 15px;
+    width: 395px;
+    height: 85.38px;
+    background: rgba(22, 22, 22, 0.75);
+    box-shadow: 0px -0.5px 0px rgba(255, 255, 255, 0.16);
+    border-radius: 0 0 55px 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 21px;
+  }
+  &__list {
+    width: 100%;
+    margin-top: 45px;
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+
+    &_searchBlock {
+      display: flex;
+      width: 342px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &_profile {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .profile {
+        &__avatar {
+          margin-right: 15px;
+          cursor: pointer;
+        }
+        &__info {
+          &_title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.38px;
+            color: #ffffff;
+          }
+          &_counters {
+            display: flex;
+            width: 130px;
+            justify-content: space-between;
+          }
+          &_counter {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: -0.08px;
+            color: rgba(235, 235, 245, 0.6);
+          }
+          &_activeCounter {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: -0.08px;
+            color: #34c759;
+          }
+        }
+        &__btnMore {
+          margin-left: auto;
+          background: transparent;
+          color: #fff;
+          border: none;
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+    &_favorites {
+      margin-top: 11px;
+      width: 100%;
+      overflow: overlay;
+      scrollbar-width: none;
+
+      display: flex;
+      gap: 11px;
+      &:hover {
+        scrollbar-width: thin;
+      }
+    }
+    &_grid {
+      margin-top: 57px;
+      width: 100%;
+      height: 357px;
+      display: flex;
+      overflow: scroll;
+      flex-direction: column;
+      align-items: center;
+      list-style: none;
+      gap: 11px;
+      .contact {
+        padding: 10px 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        &__avatar {
+          width: 34px;
+          height: 34px;
+          border-radius: 100%;
+          object-fit: cover;
+          margin-right: 14px;
+        }
+        &__title {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 21px;
+        }
+        &__actions {
+          margin-left: auto;
+          width: 85px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .actions {
+            &__callBtn,
+            &__messageBtn {
+              width: 37px;
+              height: 37px;
+              border-radius: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              cursor: pointer;
+            }
+            &__callBtn {
+              background: rgba(52, 199, 89, 0.1);
+            }
+            &__messageBtn {
+              background: rgba(0, 122, 255, 0.1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
