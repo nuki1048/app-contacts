@@ -1,0 +1,28 @@
+.lock__screen {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &_time {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 83px;
+    line-height: 99px;
+  }
+  &_date {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.35px;
+  }
+  &_bottomActions {
+    margin-top: 526px;
+    display: flex;
+    width: 290px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

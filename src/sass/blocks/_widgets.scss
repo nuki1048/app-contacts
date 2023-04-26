@@ -1,0 +1,116 @@
+.widget {
+  width: 155px;
+  height: 155px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #000;
+  border-radius: 21.67px;
+  transition: 0.5s all;
+  &:hover {
+    transform: scale(1.03);
+  }
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__todoist {
+    background: linear-gradient(180deg, #db4b3d 0%, #d03728 100%);
+    position: relative;
+    padding: 13px 24px 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      content: "";
+      width: 37px;
+      height: 37px;
+      display: block;
+      position: absolute;
+      background: url("../icons/todoistIcon.svg");
+      top: 18px;
+      left: 0;
+    }
+    &_today {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+    }
+    &_date {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+    }
+    &_list {
+      margin-top: 7px;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      li {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+      }
+      li.more {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(255, 255, 255, 0.57);
+      }
+    }
+  }
+  &__sales {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    &_info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &_name {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      .fullname {
+        color: rgba(255, 255, 255, 0.57);
+      }
+    }
+    &_profit {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      /* identical to box height */
+
+      text-align: right;
+
+      color: #43f95a;
+    }
+    &_price {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 43px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.main__screen {
+  display: none;
+  margin: 25px auto 0 auto;
+  &_widgets {
+    margin: 0 auto;
+    display: flex;
+    width: 330px;
+    height: 183px;
+    align-items: center;
+    gap: 21px;
+  }
+  &_grid {
+    margin: 21px auto 0 auto;
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 30px 19px;
+  }
+  .dots {
+    width: 40px;
+    position: absolute;
+    bottom: 158px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    .dot {
+      background: #fff;
+      mix-blend-mode: normal;
+      opacity: 0.32;
+      &__active {
+        opacity: 1;
+      }
+    }
+  }
+  &_bottomContorls {
+    margin-top: 188px;
+    padding: 18px;
+    width: 366px;
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(27.1828px);
+    border-radius: 35px;
+    a {
+      text-decoration: none;
+    }
+  }
+}

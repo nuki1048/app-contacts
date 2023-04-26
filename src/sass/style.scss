@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import "./libs/animate.min.scss";
+@import "./blocks/container.scss";
+@import "./blocks/mockup.scss";
+@import "./blocks/lockScreen.scss";
+@import "./blocks/icons.scss";
+@import "./blocks/widgets.scss";
+@import "./blocks/mainScreen.scss";
+@import "./blocks/contactsScreen.scss";
+body {
+  font-family: "Roboto";
+  font-weight: normal;
+  color: #fff;
+  background: url("../img/background/main_bg.svg") center no-repeat;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
