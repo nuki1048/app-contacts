@@ -116,13 +116,15 @@
     &_favorites {
       margin-top: 11px;
       width: 100%;
-      overflow: overlay;
+      overflow-y: hidden;
+      overflow-x: hidden;
       scrollbar-width: none;
 
       display: flex;
       gap: 11px;
       &:hover {
         scrollbar-width: thin;
+        overflow-x: scroll;
       }
     }
     &_grid {
@@ -130,11 +132,14 @@
       width: 100%;
       height: 357px;
       display: flex;
-      overflow: scroll;
+      overflow: hidden;
       flex-direction: column;
       align-items: center;
       list-style: none;
       gap: 11px;
+      &:hover {
+        overflow-y: scroll;
+      }
       .contact {
         padding: 10px 0;
         width: 100%;
