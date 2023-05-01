@@ -1,181 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iphone mockup</title>
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
-  <body>
-    <section class="animate__animated animate__fadeIn screen">
-      <div class="container">
-        <div class="mockup">
-          <div class="mockup__dynamicIsland"></div>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Iphone mockup</title>
+      <link rel="stylesheet" href="./css/main.min.css" />
+   </head>
+   <body>
+      <section class="animate__animated animate__fadeIn screen">
+         <div class="container">
+            <div class="mockup">
+               <div class="mockup__dynamicIsland"></div>
 
-          <div class="mockup__statusBar">
-            <div class="mockup__statusBar_time">Figma</div>
-            <div class="mockup__statusBar_indicators">
-              <img
-                src="./icons/statusBar/cellularConnection.svg"
-                alt="3g"
-                class="mockup__statusBar_cercullarConecction"
-              />
-              <img src="./icons/statusBar/wifiIcon.svg" alt="wifi" />
-              <img src="./icons/statusBar/batteryIcon.svg" alt="" />
-            </div>
-          </div>
-          <div class="animate__animated animate__fadeIn lock__screen">
-            <div class="lock__screen_lock">
-              <img src="./icons/lockIcon.svg" alt="lock" />
-            </div>
-            <h2 class="lock__screen_time">9:47</h2>
-            <h3 class="lock__screen_date">Monday,June 3</h3>
-            <div class="lock__screen_bottomActions">
-              <div class="icon icon__flashlight">
-                <img src="./icons/flashlightIcon.svg" alt="flashlight" />
-              </div>
-              <div class="icon icon__cameraAction">
-                <img src="./icons/cameraActionIcon.svg" alt="camera " />
-              </div>
-            </div>
-            <div class="mockup__homeIndicator"></div>
-          </div>
-          <div class="animate__animated main__screen">
-            <div class="main__screen_widgets">
-              <div class="widget__block todoist">
-                <div class="widget widget__todoist">
-                  <div class="widget__todoist_today">Today</div>
-                  <div class="widget__todoist_date">22 June</div>
-                  <ul class="widget__todoist_list">
-                    <li>Meet Laura</li>
-                    <li>Go shopping</li>
-                    <li>Buy flowers</li>
-                    <li class="more">6 more</li>
-                  </ul>
-                </div>
-                <div class="widget__text">Todoist</div>
-              </div>
-              <div class="widget__block sales">
-                <div class="widget widget__sales">
-                  <div class="widget__sales_info">
-                    <h3 class="widget__sales_name">
-                      AAPL
-                      <br />
-                      <div class="fullname">Apple Inc.</div>
-                    </h3>
+               <div class="mockup__statusBar">
+                  <div data-timeClock class="mockup__statusBar_time">Figma</div>
+                  <div class="mockup__statusBar_indicators">
+                     <img
+                        src="./icons/statusBar/cellularConnection.svg"
+                        alt="3g"
+                        class="mockup__statusBar_cercullarConecction"
+                     />
+                     <img src="./icons/statusBar/wifiIcon.svg" alt="wifi" />
+                     <img src="./icons/statusBar/batteryIcon.svg" alt="" />
+                  </div>
+               </div>
+               <div class="animate__animated animate__fadeIn lock__screen">
+                  <div class="lock__screen_lock">
+                     <img src="./icons/lockIcon.svg" alt="lock" />
+                  </div>
+                  <h2 data-timeLock class="lock__screen_time">0:00</h2>
+                  <h3 class="lock__screen_date">Monday,June 3</h3>
+                  <div class="lock__screen_bottomActions">
+                     <div class="icon icon__flashlight">
+                        <img
+                           src="./icons/flashlightIcon.svg"
+                           alt="flashlight"
+                        />
+                     </div>
+                     <div class="icon icon__cameraAction">
+                        <img src="./icons/cameraActionIcon.svg" alt="camera " />
+                     </div>
+                  </div>
+                  <div data-homeIndicator class="mockup__homeIndicator"></div>
+               </div>
+               <div class="animate__animated main__screen">
+                  <div class="main__screen_widgets">
+                     <div class="widget__block todoist">
+                        <div class="widget widget__todoist">
+                           <div class="widget__todoist_today">Today</div>
+                           <div class="widget__todoist_date">22 June</div>
+                           <ul class="widget__todoist_list">
+                              <li>Meet Laura</li>
+                              <li>Go shopping</li>
+                              <li>Buy flowers</li>
+                              <li class="more">6 more</li>
+                           </ul>
+                        </div>
+                        <div class="widget__text">Todoist</div>
+                     </div>
+                     <div class="widget__block sales">
+                        <div class="widget widget__sales">
+                           <div class="widget__sales_info">
+                              <h3 class="widget__sales_name">
+                                 AAPL
+                                 <br />
+                                 <div class="fullname">Apple Inc.</div>
+                              </h3>
 
-                    <div class="widget__sales_profit">+ 4.50</div>
+                              <div class="widget__sales_profit">+ 4.50</div>
+                           </div>
+                           <div class="widget__sales_graph">
+                              <img
+                                 src="./icons/graphIcon.svg"
+                                 alt="graph profit"
+                              />
+                           </div>
+                           <div class="widget__sales_price">349.74</div>
+                        </div>
+                        <div class="widget__text">Apple sales</div>
+                     </div>
                   </div>
-                  <div class="widget__sales_graph">
-                    <img src="./icons/graphIcon.svg" alt="graph profit" />
+                  <div class="main__screen_grid">
+                     <div class="icon__block facetime">
+                        <div class="icon icon__facetime">
+                           <img
+                              src="./icons/apps/facetimeIcon.svg"
+                              alt="Facetime"
+                           />
+                        </div>
+                        <div class="icon__text">Facetime</div>
+                     </div>
+                     <div class="icon__block calendar">
+                        <div class="icon icon__calendar">
+                           <img
+                              src="./icons/apps/calendarIcon.svg"
+                              alt="Calendar"
+                           />
+                        </div>
+                        <div class="icon__text">Calendar</div>
+                     </div>
+                     <div class="icon__block camera">
+                        <div class="icon icon__photos">
+                           <img
+                              src="./icons/apps/photosIcon.svg"
+                              alt="Photos"
+                           />
+                        </div>
+                        <div class="icon__text">Camera</div>
+                     </div>
+                     <div class="icon__block camera">
+                        <div class="icon icon__camera">
+                           <img
+                              src="./icons/apps/cameraIcon.svg"
+                              alt="Camera"
+                           />
+                        </div>
+                        <div class="icon__text">Camera</div>
+                     </div>
+                     <div class="icon__block mail">
+                        <div class="icon icon__mail">
+                           <img src="./icons/apps/mailIcon.svg" alt="Mail" />
+                        </div>
+                        <div class="icon__text">Mail</div>
+                     </div>
+                     <div class="icon__block notes">
+                        <div class="icon icon__notes">
+                           <img src="./icons/apps/notesIcon.svg" alt="Notes" />
+                        </div>
+                        <div class="icon__text">Notes</div>
+                     </div>
+                     <div class="icon__block reminders">
+                        <div class="icon icon__reminders">
+                           <img
+                              src="./icons/apps/remindersIcon.svg"
+                              alt="Reminders"
+                           />
+                        </div>
+                        <div class="icon__text">Reminders</div>
+                     </div>
+                     <div class="icon__block clock">
+                        <div class="icon icon__clock">
+                           <img src="./icons/apps/clockIcon.svg" alt="Clock" />
+                        </div>
+                        <div class="icon__text">Clock</div>
+                     </div>
+                     <div class="icon__block home">
+                        <div class="icon icon__home">
+                           <img src="./icons/apps/homeIcon.svg" alt="Home" />
+                        </div>
+                        <div class="icon__text">Home</div>
+                     </div>
+                     <div class="icon__block appleTV">
+                        <div class="icon icon__appleTV">
+                           <img
+                              src="./icons/apps/appleTVIcon.svg"
+                              alt="Apple TV"
+                           />
+                        </div>
+                        <div class="icon__text">AppleTV</div>
+                     </div>
+                     <div class="icon__block appStore">
+                        <div class="icon icon__appStore">
+                           <img
+                              src="./icons/apps/appleStoreIcon.svg"
+                              alt="AppStore"
+                           />
+                        </div>
+                        <div class="icon__text">AppStore</div>
+                     </div>
+                     <div class="icon__block settings">
+                        <div class="icon icon__settings">
+                           <img
+                              src="./icons/apps/settingsIcon.svg"
+                              alt="Settings"
+                           />
+                        </div>
+                        <div class="icon__text">Settings</div>
+                     </div>
                   </div>
-                  <div class="widget__sales_price">349.74</div>
-                </div>
-                <div class="widget__text">Apple sales</div>
-              </div>
+                  <div class="main__screen_dots">
+                     <ul class="dots">
+                        <li class="dot__active"></li>
+                        <li class="dot"></li>
+                        <li class="dot"></li>
+                     </ul>
+                  </div>
+                  <div class="main__screen_bottomContorls">
+                     <div class="icon icon__contacts">
+                        <a href="contacts.html">
+                           <img
+                              src="./icons/apps/contactsIcon.svg"
+                              alt="Contacts"
+                           />
+                        </a>
+                     </div>
+                     <div class="icon icon__safari">
+                        <img src="./icons/apps/safariIcon.svg" alt="Safari" />
+                     </div>
+                     <div class="icon icon__messages">
+                        <img
+                           src="./icons/apps/messagesIcon.svg"
+                           alt="Messages"
+                        />
+                     </div>
+                     <div class="icon icon__music">
+                        <img src="./icons/apps/musicIcon.svg" alt="Music" />
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class="main__screen_grid">
-              <div class="icon__block facetime">
-                <div class="icon icon__facetime">
-                  <img src="./icons/apps/facetimeIcon.svg" alt="Facetime" />
-                </div>
-                <div class="icon__text">Facetime</div>
-              </div>
-              <div class="icon__block calendar">
-                <div class="icon icon__calendar">
-                  <img src="./icons/apps/calendarIcon.svg" alt="Calendar" />
-                </div>
-                <div class="icon__text">Calendar</div>
-              </div>
-              <div class="icon__block camera">
-                <div class="icon icon__photos">
-                  <img src="./icons/apps/photosIcon.svg" alt="Photos" />
-                </div>
-                <div class="icon__text">Camera</div>
-              </div>
-              <div class="icon__block camera">
-                <div class="icon icon__camera">
-                  <img src="./icons/apps/cameraIcon.svg" alt="Camera" />
-                </div>
-                <div class="icon__text">Camera</div>
-              </div>
-              <div class="icon__block mail">
-                <div class="icon icon__mail">
-                  <img src="./icons/apps/mailIcon.svg" alt="Mail" />
-                </div>
-                <div class="icon__text">Mail</div>
-              </div>
-              <div class="icon__block notes">
-                <div class="icon icon__notes">
-                  <img src="./icons/apps/notesIcon.svg" alt="Notes" />
-                </div>
-                <div class="icon__text">Notes</div>
-              </div>
-              <div class="icon__block reminders">
-                <div class="icon icon__reminders">
-                  <img src="./icons/apps/remindersIcon.svg" alt="Reminders" />
-                </div>
-                <div class="icon__text">Reminders</div>
-              </div>
-              <div class="icon__block clock">
-                <div class="icon icon__clock">
-                  <img src="./icons/apps/clockIcon.svg" alt="Clock" />
-                </div>
-                <div class="icon__text">Clock</div>
-              </div>
-              <div class="icon__block home">
-                <div class="icon icon__home">
-                  <img src="./icons/apps/homeIcon.svg" alt="Home" />
-                </div>
-                <div class="icon__text">Home</div>
-              </div>
-              <div class="icon__block appleTV">
-                <div class="icon icon__appleTV">
-                  <img src="./icons/apps/appleTVIcon.svg" alt="Apple TV" />
-                </div>
-                <div class="icon__text">AppleTV</div>
-              </div>
-              <div class="icon__block appStore">
-                <div class="icon icon__appStore">
-                  <img src="./icons/apps/appleStoreIcon.svg" alt="AppStore" />
-                </div>
-                <div class="icon__text">AppStore</div>
-              </div>
-              <div class="icon__block settings">
-                <div class="icon icon__settings">
-                  <img src="./icons/apps/settingsIcon.svg" alt="Settings" />
-                </div>
-                <div class="icon__text">Settings</div>
-              </div>
-            </div>
-            <div class="main__screen_dots">
-              <ul class="dots">
-                <li class="dot__active"></li>
-                <li class="dot"></li>
-                <li class="dot"></li>
-              </ul>
-            </div>
-            <div class="main__screen_bottomContorls">
-              <div class="icon icon__contacts">
-                <a href="contacts.html">
-                  <img src="./icons/apps/contactsIcon.svg" alt="Contacts" />
-                </a>
-              </div>
-              <div class="icon icon__safari">
-                <img src="./icons/apps/safariIcon.svg" alt="Safari" />
-              </div>
-              <div class="icon icon__messages">
-                <img src="./icons/apps/messagesIcon.svg" alt="Messages" />
-              </div>
-              <div class="icon icon__music">
-                <img src="./icons/apps/musicIcon.svg" alt="Music" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <script src="./js/main.min.js"></script>
-  </body>
+         </div>
+      </section>
+      <script type="module" src="/script.js"></script>
+   </body>
 </html>

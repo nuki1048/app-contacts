@@ -1,559 +1,683 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacts</title>
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
-  <body>
-    <section class="animate__animated animate__fadeIn screen">
-      <div class="container">
-        <div class="mockup mockup__contacts">
-          <div class="mockup__dynamicIsland"></div>
-          <div class="mockup__statusBar">
-            <div class="mockup__statusBar_time">Figma</div>
-            <div class="mockup__statusBar_indicators">
-              <img
-                src="./icons/statusBar/cellularConnection.svg"
-                alt="3g"
-                class="mockup__statusBar_cercullarConecction"
-              />
-              <img src="./icons/statusBar/wifiIcon.svg" alt="wifi" />
-              <img src="./icons/statusBar/batteryIcon.svg" alt="" />
-            </div>
-          </div>
-          <section class="contacts__keypad">
-            <input type="text" class="contacts__keypad_input" />
-            <div class="contacts__keypad_grid">
-              <div class="icon icon__contactsNum">1</div>
-              <div class="icon icon__contactsNum">
-                2
-                <div class="letters">A B C</div>
-              </div>
-              <div class="icon icon__contactsNum">
-                3
-                <div class="letters">D E F</div>
-              </div>
-              <div class="icon icon__contactsNum">
-                4
-                <div class="letters">G H I</div>
-              </div>
-              <div class="icon icon__contactsNum">
-                5
-                <div class="letters">J K L</div>
-              </div>
-              <div class="icon icon__contactsNum">
-                6
-                <div class="letters">M N O</div>
-              </div>
-              <div class="icon icon__contactsNum">
-                7
-                <div class="letters">P Q R S</div>
-              </div>
-              <div class="icon icon__contactsNum">
-                8
-                <div class="letters">T U V</div>
-              </div>
-              <div class="icon icon__contactsNum">
-                9
-                <div class="letters">W X Y Z</div>
-              </div>
-              <div class="icon icon__contactsNum">*</div>
-              <div class="icon icon__contactsNum">0</div>
-              <div class="icon icon__contactsNum">#</div>
-              <div class="icon icon__contactsNum call">
-                <img src="./icons/apps/contactsIcon.svg" alt="Call" />
-              </div>
-            </div>
-          </section>
-          <section class="contacts__list">
-            <div class="contacts__list_searchBlock">
-              <div class="search__block-mainInput">
-                <input
-                  type="text"
-                  class="search__block-mainInput"
-                  placeholder="Search"
-                />
-              </div>
-              <button class="search__block-addBtn"></button>
-              <button class="search__block-moreBtn">...</button>
-            </div>
-            <div class="contacts__list_profile">
-              <img src="./img/profile.jpg" alt="" class="profile__avatar" />
-              <div class="profile__info">
-                <h3 class="profile__info_title">Aleksey Bondarev</h3>
-                <div class="profile__info_counters">
-                  <div class="profile__info_counter">386 contacts</div>
-                  <div class="profile__info_activeCounter">73 active</div>
-                </div>
-              </div>
-              <button class="profile__btnMore">></button>
-            </div>
-            <div class="contacts__list_favorites">
-              <div class="favorites__card">
-                <img
-                  src="./img/profile.jpg"
-                  alt=""
-                  class="favorites__card_avatar favorites__card_avatar-active"
-                />
-                <h3 class="favorites__card_title">Billy Milton</h3>
-                <a href="tel:+19114728921" class="favorites__card_telephone"
-                  >+1 (911) 472-89-21</a
-                >
-                <div class="favorites__card_actions">
-                  <div class="actions__callBtn">
-                    <img src="./icons/contacts/callIcon.svg" alt="call btn" />
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Contacts</title>
+      <link rel="stylesheet" href="./css/main.min.css" />
+   </head>
+   <body>
+      <section class="animate__animated animate__fadeIn screen">
+         <div class="container">
+            <div class="mockup mockup__contacts">
+               <div class="mockup__dynamicIsland"></div>
+               <div class="mockup__statusBar">
+                  <div class="mockup__statusBar_time">Figma</div>
+                  <div class="mockup__statusBar_indicators">
+                     <img
+                        src="./icons/statusBar/cellularConnection.svg"
+                        alt="3g"
+                        class="mockup__statusBar_cercullarConecction"
+                     />
+                     <img src="./icons/statusBar/wifiIcon.svg" alt="wifi" />
+                     <img src="./icons/statusBar/batteryIcon.svg" alt="" />
                   </div>
-                  <div class="actions__messageBtn">
-                    <img
-                      src="./icons/contacts/messageIcon.svg"
-                      alt="message btn"
-                    />
+               </div>
+               <section class="contacts__keypad">
+                  <input type="text" class="contacts__keypad_input" />
+                  <div class="contacts__keypad_grid">
+                     <div class="icon icon__contactsNum">1</div>
+                     <div class="icon icon__contactsNum">
+                        2
+                        <div class="letters">A B C</div>
+                     </div>
+                     <div class="icon icon__contactsNum">
+                        3
+                        <div class="letters">D E F</div>
+                     </div>
+                     <div class="icon icon__contactsNum">
+                        4
+                        <div class="letters">G H I</div>
+                     </div>
+                     <div class="icon icon__contactsNum">
+                        5
+                        <div class="letters">J K L</div>
+                     </div>
+                     <div class="icon icon__contactsNum">
+                        6
+                        <div class="letters">M N O</div>
+                     </div>
+                     <div class="icon icon__contactsNum">
+                        7
+                        <div class="letters">P Q R S</div>
+                     </div>
+                     <div class="icon icon__contactsNum">
+                        8
+                        <div class="letters">T U V</div>
+                     </div>
+                     <div class="icon icon__contactsNum">
+                        9
+                        <div class="letters">W X Y Z</div>
+                     </div>
+                     <div class="icon icon__contactsNum">*</div>
+                     <div class="icon icon__contactsNum">0</div>
+                     <div class="icon icon__contactsNum">#</div>
+                     <div class="icon icon__contactsNum call">
+                        <img src="./icons/apps/contactsIcon.svg" alt="Call" />
+                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="favorites__card">
-                <img
-                  src="./img/profile.jpg"
-                  alt=""
-                  class="favorites__card_avatar favorites__card_avatar-active"
-                />
-                <h3 class="favorites__card_title">Billy Milton</h3>
-                <a href="tel:+19114728921" class="favorites__card_telephone"
-                  >+1 (911) 472-89-21</a
-                >
-                <div class="favorites__card_actions">
-                  <div class="actions__callBtn">
-                    <img src="./icons/contacts/callIcon.svg" alt="call btn" />
+               </section>
+               <section class="contacts__list">
+                  <div class="contacts__list_searchBlock">
+                     <div class="search__block-mainInput">
+                        <input
+                           type="text"
+                           class="search__block-mainInput"
+                           placeholder="Search"
+                        />
+                     </div>
+                     <button class="search__block-addBtn"></button>
+                     <button class="search__block-moreBtn">...</button>
                   </div>
-                  <div class="actions__messageBtn">
-                    <img
-                      src="./icons/contacts/messageIcon.svg"
-                      alt="message btn"
-                    />
+                  <div class="contacts__list_profile">
+                     <img
+                        src="./img/profile.jpg"
+                        alt=""
+                        class="profile__avatar"
+                     />
+                     <div class="profile__info">
+                        <h3 class="profile__info_title">Aleksey Bondarev</h3>
+                        <div class="profile__info_counters">
+                           <div class="profile__info_counter">386 contacts</div>
+                           <div class="profile__info_activeCounter">
+                              73 active
+                           </div>
+                        </div>
+                     </div>
+                     <button class="profile__btnMore">></button>
                   </div>
-                </div>
-              </div>
-              <div class="favorites__card">
-                <img
-                  src="./img/profile.jpg"
-                  alt=""
-                  class="favorites__card_avatar favorites__card_avatar-active"
-                />
-                <h3 class="favorites__card_title">Billy Milton</h3>
-                <a href="tel:+19114728921" class="favorites__card_telephone"
-                  >+1 (911) 472-89-21</a
-                >
-                <div class="favorites__card_actions">
-                  <div class="actions__callBtn">
-                    <img src="./icons/contacts/callIcon.svg" alt="call btn" />
+                  <div class="contacts__list_favorites">
+                     <div class="favorites__card">
+                        <img
+                           src="./img/profile.jpg"
+                           alt=""
+                           class="favorites__card_avatar favorites__card_avatar-active"
+                        />
+                        <h3 class="favorites__card_title">Billy Milton</h3>
+                        <a
+                           href="tel:+19114728921"
+                           class="favorites__card_telephone"
+                           >+1 (911) 472-89-21</a
+                        >
+                        <div class="favorites__card_actions">
+                           <div class="actions__callBtn">
+                              <img
+                                 src="./icons/contacts/callIcon.svg"
+                                 alt="call btn"
+                              />
+                           </div>
+                           <div class="actions__messageBtn">
+                              <img
+                                 src="./icons/contacts/messageIcon.svg"
+                                 alt="message btn"
+                              />
+                           </div>
+                        </div>
+                     </div>
+                     <div class="favorites__card">
+                        <img
+                           src="./img/profile.jpg"
+                           alt=""
+                           class="favorites__card_avatar favorites__card_avatar-active"
+                        />
+                        <h3 class="favorites__card_title">Billy Milton</h3>
+                        <a
+                           href="tel:+19114728921"
+                           class="favorites__card_telephone"
+                           >+1 (911) 472-89-21</a
+                        >
+                        <div class="favorites__card_actions">
+                           <div class="actions__callBtn">
+                              <img
+                                 src="./icons/contacts/callIcon.svg"
+                                 alt="call btn"
+                              />
+                           </div>
+                           <div class="actions__messageBtn">
+                              <img
+                                 src="./icons/contacts/messageIcon.svg"
+                                 alt="message btn"
+                              />
+                           </div>
+                        </div>
+                     </div>
+                     <div class="favorites__card">
+                        <img
+                           src="./img/profile.jpg"
+                           alt=""
+                           class="favorites__card_avatar favorites__card_avatar-active"
+                        />
+                        <h3 class="favorites__card_title">Billy Milton</h3>
+                        <a
+                           href="tel:+19114728921"
+                           class="favorites__card_telephone"
+                           >+1 (911) 472-89-21</a
+                        >
+                        <div class="favorites__card_actions">
+                           <div class="actions__callBtn">
+                              <img
+                                 src="./icons/contacts/callIcon.svg"
+                                 alt="call btn"
+                              />
+                           </div>
+                           <div class="actions__messageBtn">
+                              <img
+                                 src="./icons/contacts/messageIcon.svg"
+                                 alt="message btn"
+                              />
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                  <div class="actions__messageBtn">
-                    <img
-                      src="./icons/contacts/messageIcon.svg"
-                      alt="message btn"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <ul class="contacts__list_grid">
-              <li class="contact">
-                <img class="contact__avatar" src="./img/profile.jpg" alt="" />
-                <h3 class="contact__title">Andrey Asperch</h3>
-                <div class="contact__actions">
-                  <div class="actions__callBtn">
-                    <img src="./icons/contacts/callIcon.svg" alt="call btn" />
-                  </div>
-                  <div class="actions__messageBtn">
-                    <img
-                      src="./icons/contacts/messageIcon.svg"
-                      alt="message btn"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li class="contact">
-                <img class="contact__avatar" src="./img/profile.jpg" alt="" />
-                <h3 class="contact__title">Andrey Asperch</h3>
-                <div class="contact__actions">
-                  <div class="actions__callBtn">
-                    <img src="./icons/contacts/callIcon.svg" alt="call btn" />
-                  </div>
-                  <div class="actions__messageBtn">
-                    <img
-                      src="./icons/contacts/messageIcon.svg"
-                      alt="message btn"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li class="contact">
-                <img class="contact__avatar" src="./img/profile.jpg" alt="" />
-                <h3 class="contact__title">Andrey Asperch</h3>
-                <div class="contact__actions">
-                  <div class="actions__callBtn">
-                    <img src="./icons/contacts/callIcon.svg" alt="call btn" />
-                  </div>
-                  <div class="actions__messageBtn">
-                    <img
-                      src="./icons/contacts/messageIcon.svg"
-                      alt="message btn"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li class="contact">
-                <img class="contact__avatar" src="./img/profile.jpg" alt="" />
-                <h3 class="contact__title">Andrey Asperch</h3>
-                <div class="contact__actions">
-                  <div class="actions__callBtn">
-                    <img src="./icons/contacts/callIcon.svg" alt="call btn" />
-                  </div>
-                  <div class="actions__messageBtn">
-                    <img
-                      src="./icons/contacts/messageIcon.svg"
-                      alt="message btn"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li class="contact">
-                <img class="contact__avatar" src="./img/profile.jpg" alt="" />
-                <h3 class="contact__title">Andrey Asperch</h3>
-                <div class="contact__actions">
-                  <div class="actions__callBtn">
-                    <img src="./icons/contacts/callIcon.svg" alt="call btn" />
-                  </div>
-                  <div class="actions__messageBtn">
-                    <img
-                      src="./icons/contacts/messageIcon.svg"
-                      alt="message btn"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li class="contact">
-                <img class="contact__avatar" src="./img/profile.jpg" alt="" />
-                <h3 class="contact__title">Andrey Asperch</h3>
-                <div class="contact__actions">
-                  <div class="actions__callBtn">
-                    <img src="./icons/contacts/callIcon.svg" alt="call btn" />
-                  </div>
-                  <div class="actions__messageBtn">
-                    <img
-                      src="./icons/contacts/messageIcon.svg"
-                      alt="message btn"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li class="contact">
-                <img class="contact__avatar" src="./img/profile.jpg" alt="" />
-                <h3 class="contact__title">Andrey Asperch</h3>
-                <div class="contact__actions">
-                  <div class="actions__callBtn">
-                    <img src="./icons/contacts/callIcon.svg" alt="call btn" />
-                  </div>
-                  <div class="actions__messageBtn">
-                    <img
-                      src="./icons/contacts/messageIcon.svg"
-                      alt="message btn"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li class="contact">
-                <img class="contact__avatar" src="./img/profile.jpg" alt="" />
-                <h3 class="contact__title">Andrey Asperch</h3>
-                <div class="contact__actions">
-                  <div class="actions__callBtn">
-                    <img src="./icons/contacts/callIcon.svg" alt="call btn" />
-                  </div>
-                  <div class="actions__messageBtn">
-                    <img
-                      src="./icons/contacts/messageIcon.svg"
-                      alt="message btn"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li class="contact">
-                <img class="contact__avatar" src="./img/profile.jpg" alt="" />
-                <h3 class="contact__title">Andrey Asperch</h3>
-                <div class="contact__actions">
-                  <div class="actions__callBtn">
-                    <img src="./icons/contacts/callIcon.svg" alt="call btn" />
-                  </div>
-                  <div class="actions__messageBtn">
-                    <img
-                      src="./icons/contacts/messageIcon.svg"
-                      alt="message btn"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li class="contact">
-                <img class="contact__avatar" src="./img/profile.jpg" alt="" />
-                <h3 class="contact__title">Andrey Asperch</h3>
-                <div class="contact__actions">
-                  <div class="actions__callBtn">
-                    <img src="./icons/contacts/callIcon.svg" alt="call btn" />
-                  </div>
-                  <div class="actions__messageBtn">
-                    <img
-                      src="./icons/contacts/messageIcon.svg"
-                      alt="message btn"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li class="contact">
-                <img class="contact__avatar" src="./img/profile.jpg" alt="" />
-                <h3 class="contact__title">Andrey Asperch</h3>
-                <div class="contact__actions">
-                  <div class="actions__callBtn">
-                    <img src="./icons/contacts/callIcon.svg" alt="call btn" />
-                  </div>
-                  <div class="actions__messageBtn">
-                    <img
-                      src="./icons/contacts/messageIcon.svg"
-                      alt="message btn"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li class="contact">
-                <img class="contact__avatar" src="./img/profile.jpg" alt="" />
-                <h3 class="contact__title">Andrey Asperch</h3>
-                <div class="contact__actions">
-                  <div class="actions__callBtn">
-                    <img src="./icons/contacts/callIcon.svg" alt="call btn" />
-                  </div>
-                  <div class="actions__messageBtn">
-                    <img
-                      src="./icons/contacts/messageIcon.svg"
-                      alt="message btn"
-                    />
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </section>
+                  <ul class="contacts__list_grid">
+                     <li class="contact">
+                        <img
+                           class="contact__avatar"
+                           src="./img/profile.jpg"
+                           alt=""
+                        />
+                        <h3 class="contact__title">Andrey Asperch</h3>
+                        <div class="contact__actions">
+                           <div class="actions__callBtn">
+                              <img
+                                 src="./icons/contacts/callIcon.svg"
+                                 alt="call btn"
+                              />
+                           </div>
+                           <div class="actions__messageBtn">
+                              <img
+                                 src="./icons/contacts/messageIcon.svg"
+                                 alt="message btn"
+                              />
+                           </div>
+                        </div>
+                     </li>
+                     <li class="contact">
+                        <img
+                           class="contact__avatar"
+                           src="./img/profile.jpg"
+                           alt=""
+                        />
+                        <h3 class="contact__title">Andrey Asperch</h3>
+                        <div class="contact__actions">
+                           <div class="actions__callBtn">
+                              <img
+                                 src="./icons/contacts/callIcon.svg"
+                                 alt="call btn"
+                              />
+                           </div>
+                           <div class="actions__messageBtn">
+                              <img
+                                 src="./icons/contacts/messageIcon.svg"
+                                 alt="message btn"
+                              />
+                           </div>
+                        </div>
+                     </li>
+                     <li class="contact">
+                        <img
+                           class="contact__avatar"
+                           src="./img/profile.jpg"
+                           alt=""
+                        />
+                        <h3 class="contact__title">Andrey Asperch</h3>
+                        <div class="contact__actions">
+                           <div class="actions__callBtn">
+                              <img
+                                 src="./icons/contacts/callIcon.svg"
+                                 alt="call btn"
+                              />
+                           </div>
+                           <div class="actions__messageBtn">
+                              <img
+                                 src="./icons/contacts/messageIcon.svg"
+                                 alt="message btn"
+                              />
+                           </div>
+                        </div>
+                     </li>
+                     <li class="contact">
+                        <img
+                           class="contact__avatar"
+                           src="./img/profile.jpg"
+                           alt=""
+                        />
+                        <h3 class="contact__title">Andrey Asperch</h3>
+                        <div class="contact__actions">
+                           <div class="actions__callBtn">
+                              <img
+                                 src="./icons/contacts/callIcon.svg"
+                                 alt="call btn"
+                              />
+                           </div>
+                           <div class="actions__messageBtn">
+                              <img
+                                 src="./icons/contacts/messageIcon.svg"
+                                 alt="message btn"
+                              />
+                           </div>
+                        </div>
+                     </li>
+                     <li class="contact">
+                        <img
+                           class="contact__avatar"
+                           src="./img/profile.jpg"
+                           alt=""
+                        />
+                        <h3 class="contact__title">Andrey Asperch</h3>
+                        <div class="contact__actions">
+                           <div class="actions__callBtn">
+                              <img
+                                 src="./icons/contacts/callIcon.svg"
+                                 alt="call btn"
+                              />
+                           </div>
+                           <div class="actions__messageBtn">
+                              <img
+                                 src="./icons/contacts/messageIcon.svg"
+                                 alt="message btn"
+                              />
+                           </div>
+                        </div>
+                     </li>
+                     <li class="contact">
+                        <img
+                           class="contact__avatar"
+                           src="./img/profile.jpg"
+                           alt=""
+                        />
+                        <h3 class="contact__title">Andrey Asperch</h3>
+                        <div class="contact__actions">
+                           <div class="actions__callBtn">
+                              <img
+                                 src="./icons/contacts/callIcon.svg"
+                                 alt="call btn"
+                              />
+                           </div>
+                           <div class="actions__messageBtn">
+                              <img
+                                 src="./icons/contacts/messageIcon.svg"
+                                 alt="message btn"
+                              />
+                           </div>
+                        </div>
+                     </li>
+                     <li class="contact">
+                        <img
+                           class="contact__avatar"
+                           src="./img/profile.jpg"
+                           alt=""
+                        />
+                        <h3 class="contact__title">Andrey Asperch</h3>
+                        <div class="contact__actions">
+                           <div class="actions__callBtn">
+                              <img
+                                 src="./icons/contacts/callIcon.svg"
+                                 alt="call btn"
+                              />
+                           </div>
+                           <div class="actions__messageBtn">
+                              <img
+                                 src="./icons/contacts/messageIcon.svg"
+                                 alt="message btn"
+                              />
+                           </div>
+                        </div>
+                     </li>
+                     <li class="contact">
+                        <img
+                           class="contact__avatar"
+                           src="./img/profile.jpg"
+                           alt=""
+                        />
+                        <h3 class="contact__title">Andrey Asperch</h3>
+                        <div class="contact__actions">
+                           <div class="actions__callBtn">
+                              <img
+                                 src="./icons/contacts/callIcon.svg"
+                                 alt="call btn"
+                              />
+                           </div>
+                           <div class="actions__messageBtn">
+                              <img
+                                 src="./icons/contacts/messageIcon.svg"
+                                 alt="message btn"
+                              />
+                           </div>
+                        </div>
+                     </li>
+                     <li class="contact">
+                        <img
+                           class="contact__avatar"
+                           src="./img/profile.jpg"
+                           alt=""
+                        />
+                        <h3 class="contact__title">Andrey Asperch</h3>
+                        <div class="contact__actions">
+                           <div class="actions__callBtn">
+                              <img
+                                 src="./icons/contacts/callIcon.svg"
+                                 alt="call btn"
+                              />
+                           </div>
+                           <div class="actions__messageBtn">
+                              <img
+                                 src="./icons/contacts/messageIcon.svg"
+                                 alt="message btn"
+                              />
+                           </div>
+                        </div>
+                     </li>
+                     <li class="contact">
+                        <img
+                           class="contact__avatar"
+                           src="./img/profile.jpg"
+                           alt=""
+                        />
+                        <h3 class="contact__title">Andrey Asperch</h3>
+                        <div class="contact__actions">
+                           <div class="actions__callBtn">
+                              <img
+                                 src="./icons/contacts/callIcon.svg"
+                                 alt="call btn"
+                              />
+                           </div>
+                           <div class="actions__messageBtn">
+                              <img
+                                 src="./icons/contacts/messageIcon.svg"
+                                 alt="message btn"
+                              />
+                           </div>
+                        </div>
+                     </li>
+                     <li class="contact">
+                        <img
+                           class="contact__avatar"
+                           src="./img/profile.jpg"
+                           alt=""
+                        />
+                        <h3 class="contact__title">Andrey Asperch</h3>
+                        <div class="contact__actions">
+                           <div class="actions__callBtn">
+                              <img
+                                 src="./icons/contacts/callIcon.svg"
+                                 alt="call btn"
+                              />
+                           </div>
+                           <div class="actions__messageBtn">
+                              <img
+                                 src="./icons/contacts/messageIcon.svg"
+                                 alt="message btn"
+                              />
+                           </div>
+                        </div>
+                     </li>
+                     <li class="contact">
+                        <img
+                           class="contact__avatar"
+                           src="./img/profile.jpg"
+                           alt=""
+                        />
+                        <h3 class="contact__title">Andrey Asperch</h3>
+                        <div class="contact__actions">
+                           <div class="actions__callBtn">
+                              <img
+                                 src="./icons/contacts/callIcon.svg"
+                                 alt="call btn"
+                              />
+                           </div>
+                           <div class="actions__messageBtn">
+                              <img
+                                 src="./icons/contacts/messageIcon.svg"
+                                 alt="message btn"
+                              />
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </section>
 
-          <footer class="contacts__bottomActions">
-            <div class="icon__block favorites">
-              <div class="icon icon__contactsBottomAction">
-                <svg
-                  width="29"
-                  height="27"
-                  viewBox="0 0 29 27"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6.13818 26.4331C6.63867 26.8237 7.27344 26.6895 8.03027 26.1401L14.4878 21.3916L20.9575 26.1401C21.7144 26.6895 22.3369 26.8237 22.8496 26.4331C23.3501 26.0547 23.46 25.4321 23.1548 24.5532L20.6035 16.9482L27.1221 12.2729C27.8789 11.7358 28.1841 11.1621 27.9888 10.564C27.7935 9.96582 27.2197 9.67285 26.2798 9.68506L18.2842 9.74609L15.855 2.10449C15.562 1.21338 15.1226 0.749512 14.4878 0.749512C13.8652 0.749512 13.4258 1.21338 13.1328 2.10449L10.7036 9.74609L2.70801 9.68506C1.76807 9.67285 1.19434 9.96582 0.999023 10.564C0.791504 11.1621 1.10889 11.7358 1.86572 12.2729L8.38428 16.9482L5.83301 24.5532C5.52783 25.4321 5.6377 26.0547 6.13818 26.4331Z"
-                    fill="#757575"
-                  />
-                </svg>
+               <footer class="contacts__bottomActions">
+                  <div class="icon__block favorites">
+                     <div class="icon icon__contactsBottomAction">
+                        <svg
+                           width="29"
+                           height="27"
+                           viewBox="0 0 29 27"
+                           fill="none"
+                           xmlns="http://www.w3.org/2000/svg"
+                        >
+                           <path
+                              d="M6.13818 26.4331C6.63867 26.8237 7.27344 26.6895 8.03027 26.1401L14.4878 21.3916L20.9575 26.1401C21.7144 26.6895 22.3369 26.8237 22.8496 26.4331C23.3501 26.0547 23.46 25.4321 23.1548 24.5532L20.6035 16.9482L27.1221 12.2729C27.8789 11.7358 28.1841 11.1621 27.9888 10.564C27.7935 9.96582 27.2197 9.67285 26.2798 9.68506L18.2842 9.74609L15.855 2.10449C15.562 1.21338 15.1226 0.749512 14.4878 0.749512C13.8652 0.749512 13.4258 1.21338 13.1328 2.10449L10.7036 9.74609L2.70801 9.68506C1.76807 9.67285 1.19434 9.96582 0.999023 10.564C0.791504 11.1621 1.10889 11.7358 1.86572 12.2729L8.38428 16.9482L5.83301 24.5532C5.52783 25.4321 5.6377 26.0547 6.13818 26.4331Z"
+                              fill="#757575"
+                           />
+                        </svg>
 
-                <div class="icon__text_grey">Favorites</div>
-              </div>
-            </div>
-            <div class="icon__block recent">
-              <div class="icon icon__contactsBottomAction">
-                <svg
-                  width="26"
-                  height="26"
-                  viewBox="0 0 26 26"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M13 25.2622C19.8115 25.2622 25.4512 19.6226 25.4512 12.811C25.4512 6.01172 19.7993 0.359863 12.9878 0.359863C6.18848 0.359863 0.548828 6.01172 0.548828 12.811C0.548828 19.6226 6.20068 25.2622 13 25.2622ZM6.61572 14.1294C6.12744 14.1294 5.76123 13.7632 5.76123 13.2749C5.76123 12.7988 6.12744 12.4326 6.61572 12.4326H12.1455V5.04736C12.1455 4.57129 12.5117 4.20508 12.9878 4.20508C13.4639 4.20508 13.8423 4.57129 13.8423 5.04736V13.2749C13.8423 13.7632 13.4639 14.1294 12.9878 14.1294H6.61572Z"
-                    fill="#757575"
-                  />
-                </svg>
-
-                <div class="icon__text_grey">Recent</div>
-              </div>
-            </div>
-            <div class="icon__block contacts">
-              <div class="icon icon__contactsBottomAction">
-                <svg
-                  width="28"
-                  height="29"
-                  viewBox="0 0 28 29"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M14 27.2622C20.8115 27.2622 26.4512 21.6226 26.4512 14.811C26.4512 8.01172 20.7993 2.35986 13.9878 2.35986C7.18848 2.35986 1.54883 8.01172 1.54883 14.811C1.54883 21.6226 7.20068 27.2622 14 27.2622ZM14 18.9736C10.3257 18.9736 7.50586 20.2798 6.26074 21.7446C4.625 19.9136 3.63623 17.4844 3.63623 14.811C3.63623 9.06152 8.22607 4.43506 13.9878 4.43506C19.7495 4.43506 24.3638 9.06152 24.376 14.811C24.3882 17.4966 23.3872 19.9258 21.7393 21.7568C20.5063 20.292 17.6743 18.9736 14 18.9736ZM14 16.8984C16.3438 16.9229 18.187 14.9209 18.187 12.2964C18.187 9.83057 16.3438 7.77979 14 7.77979C11.6562 7.77979 9.80078 9.83057 9.81299 12.2964C9.8252 14.9209 11.6562 16.874 14 16.8984Z"
-                    fill="#828282"
-                  />
-                </svg>
-
-                <div class="icon__text_grey">Contacts</div>
-              </div>
-            </div>
-            <div class="icon__block keypad">
-              <div class="icon icon__contactsBottomAction">
-                <svg
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 7.0625C14.4165 7.0625 16.0156 5.47559 16.0156 3.54688C16.0156 1.61816 14.4165 0.03125 12.5 0.043457C10.5713 0.0556641 8.97217 1.61816 8.97217 3.54688C8.97217 5.47559 10.5713 7.0625 12.5 7.0625ZM21.3501 7.0625C23.2788 7.0625 24.8535 5.47559 24.8535 3.54688C24.8535 1.61816 23.2788 0.03125 21.3501 0.043457C19.4214 0.0556641 17.8467 1.61816 17.8467 3.54688C17.8467 5.47559 19.4214 7.0625 21.3501 7.0625ZM3.6377 7.05029C5.56641 7.05029 7.14111 5.47559 7.14111 3.55908C7.14111 1.64258 5.56641 0.043457 3.6377 0.043457C1.70898 0.043457 0.134277 1.64258 0.134277 3.55908C0.134277 5.47559 1.70898 7.05029 3.6377 7.05029ZM12.5 15.3389C14.4165 15.3389 16.0156 13.752 16.0156 11.8232C16.0156 9.90674 14.4165 8.30762 12.5 8.31982C10.5713 8.33203 8.97217 9.90674 8.97217 11.8232C8.97217 13.752 10.5713 15.3389 12.5 15.3389ZM3.6377 15.3389C5.56641 15.3389 7.14111 13.752 7.14111 11.8232C7.14111 9.90674 5.56641 8.30762 3.6377 8.31982C1.70898 8.33203 0.134277 9.90674 0.134277 11.8232C0.134277 13.752 1.70898 15.3389 3.6377 15.3389ZM21.3501 15.3389C23.2788 15.3389 24.8535 13.752 24.8535 11.8232C24.8535 9.90674 23.2788 8.30762 21.3501 8.31982C19.4214 8.33203 17.8467 9.90674 17.8467 11.8232C17.8467 13.752 19.4214 15.3389 21.3501 15.3389ZM3.6377 23.6152C5.56641 23.6152 7.14111 22.0283 7.14111 20.0996C7.14111 18.1831 5.56641 16.5962 3.6377 16.5962C1.70898 16.5962 0.134277 18.1831 0.134277 20.0996C0.134277 22.0283 1.70898 23.6152 3.6377 23.6152ZM12.5 23.6152C14.4165 23.6152 16.0156 22.0283 16.0156 20.0996C16.0156 18.1831 14.4165 16.5962 12.5 16.5962C10.5713 16.5962 8.97217 18.1831 8.97217 20.0996C8.97217 22.0283 10.5713 23.6152 12.5 23.6152ZM21.3501 23.6152C23.2788 23.6152 24.8535 22.0283 24.8535 20.0996C24.8535 18.1831 23.2788 16.5962 21.3501 16.5962C19.4214 16.5962 17.8467 18.1831 17.8467 20.0996C17.8467 22.0283 19.4214 23.6152 21.3501 23.6152Z"
-                    fill="#9D9D9D"
-                  />
-                </svg>
-
-                <div class="icon__text_grey">Keypad</div>
-              </div>
-            </div>
-            <div class="icon__block voicemail">
-              <div class="icon icon__contactsBottomAction">
-                <svg
-                  width="39"
-                  height="18"
-                  viewBox="0 0 39 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M29.9008 15.0587C26.7039 15.0587 24.1032 12.4164 24.1032 9.16829C24.1032 5.9202 26.7039 3.27783 29.9008 3.27783C33.0977 3.27783 35.6984 5.9202 35.6984 9.16829C35.6984 12.4164 33.0977 15.0587 29.9008 15.0587ZM3.30162 9.16829C3.30162 5.9202 5.90232 3.27783 9.09919 3.27783C12.2961 3.27783 14.8968 5.9202 14.8968 9.16829C14.8968 12.4164 12.2961 15.0587 9.09919 15.0587C5.90232 15.0587 3.30162 12.4164 3.30162 9.16829ZM29.9008 0.939331C25.4356 0.939331 21.8016 4.63154 21.8016 9.16829C21.8016 11.4773 22.7459 13.5628 24.2583 15.0587H14.7427C16.2541 13.5628 17.1984 11.4773 17.1984 9.16829C17.1984 4.63154 13.5644 0.939331 9.09919 0.939331C4.63398 0.939331 1 4.63154 1 9.16829C1 13.705 4.63398 17.3972 9.09919 17.3972H29.9008C34.366 17.3972 38 13.705 38 9.16829C38 4.63154 34.366 0.939331 29.9008 0.939331Z"
-                    fill="#9D9D9D"
-                  />
-                  <path
-                    d="M24.2583 15.0587V15.3087H24.8665L24.4341 14.881L24.2583 15.0587ZM14.7427 15.0587L14.5668 14.8811L14.1348 15.3087H14.7427V15.0587ZM29.9008 14.8087C26.8458 14.8087 24.3532 12.2821 24.3532 9.16829H23.8532C23.8532 12.5507 26.5621 15.3087 29.9008 15.3087V14.8087ZM24.3532 9.16829C24.3532 6.05451 26.8458 3.52783 29.9008 3.52783V3.02783C26.5621 3.02783 23.8532 5.78589 23.8532 9.16829H24.3532ZM29.9008 3.52783C32.9559 3.52783 35.4484 6.05451 35.4484 9.16829H35.9484C35.9484 5.78589 33.2395 3.02783 29.9008 3.02783V3.52783ZM35.4484 9.16829C35.4484 12.2821 32.9559 14.8087 29.9008 14.8087V15.3087C33.2395 15.3087 35.9484 12.5507 35.9484 9.16829H35.4484ZM3.55162 9.16829C3.55162 6.05451 6.04413 3.52783 9.09919 3.52783V3.02783C5.76052 3.02783 3.05162 5.78589 3.05162 9.16829H3.55162ZM9.09919 3.52783C12.1543 3.52783 14.6468 6.05451 14.6468 9.16829H15.1468C15.1468 5.78589 12.4379 3.02783 9.09919 3.02783V3.52783ZM14.6468 9.16829C14.6468 12.2821 12.1543 14.8087 9.09919 14.8087V15.3087C12.4379 15.3087 15.1468 12.5507 15.1468 9.16829H14.6468ZM9.09919 14.8087C6.04413 14.8087 3.55162 12.2821 3.55162 9.16829H3.05162C3.05162 12.5507 5.76052 15.3087 9.09919 15.3087V14.8087ZM29.9008 0.689331C25.2938 0.689331 21.5516 4.49723 21.5516 9.16829H22.0516C22.0516 4.76585 25.5774 1.18933 29.9008 1.18933V0.689331ZM21.5516 9.16829C21.5516 11.5468 22.5246 13.6955 24.0825 15.2365L24.4341 14.881C22.9672 13.43 22.0516 11.4078 22.0516 9.16829H21.5516ZM24.2583 14.8087H14.7427V15.3087H24.2583V14.8087ZM14.9186 15.2364C16.4754 13.6955 17.4484 11.5468 17.4484 9.16829H16.9484C16.9484 11.4078 16.0328 13.4301 14.5668 14.8811L14.9186 15.2364ZM17.4484 9.16829C17.4484 4.49723 13.7062 0.689331 9.09919 0.689331V1.18933C13.4226 1.18933 16.9484 4.76585 16.9484 9.16829H17.4484ZM9.09919 0.689331C4.49218 0.689331 0.75 4.49723 0.75 9.16829H1.25C1.25 4.76585 4.77578 1.18933 9.09919 1.18933V0.689331ZM0.75 9.16829C0.75 13.8393 4.49218 17.6472 9.09919 17.6472V17.1472C4.77578 17.1472 1.25 13.5707 1.25 9.16829H0.75ZM9.09919 17.6472H29.9008V17.1472H9.09919V17.6472ZM29.9008 17.6472C34.5078 17.6472 38.25 13.8393 38.25 9.16829H37.75C37.75 13.5707 34.2242 17.1472 29.9008 17.1472V17.6472ZM38.25 9.16829C38.25 4.49723 34.5078 0.689331 29.9008 0.689331V1.18933C34.2242 1.18933 37.75 4.76585 37.75 9.16829H38.25Z"
-                    fill="#9D9D9D"
-                  />
-                </svg>
-
-                <div class="icon__text_grey">Voicemail</div>
-              </div>
-            </div>
-          </footer>
-          <div class="popup popup__form_newContact">
-            <div class="form__newContact_info">
-              <a href="#" class="form__newContact_cancel">Cancel</a>
-              <h3 class="form__newContact_title">New contact</h3>
-              <div class="form__newContact_done">Done</div>
-            </div>
-            <div class="form__newContact_avatar">
-              <img src="./icons/contacts/newContactIcon.svg" alt="Avatar" />
-            </div>
-            <form action="#" class="form__newContact_inputs">
-              <input
-                placeholder="First name"
-                type="text"
-                class="input input__firstName"
-              />
-              <input
-                placeholder="Last name"
-                type="text"
-                class="input input__lastName"
-              />
-              <input
-                placeholder="Company"
-                type="text"
-                class="input input__company"
-              />
-              <input
-                placeholder="Tel-number"
-                type="text"
-                class="input input__telephone"
-              />
-              <input
-                placeholder="Email"
-                type="text"
-                class="input input__email"
-              />
-            </form>
-            <a href="index.html" class="mockup__homeIndicator"></a>
-          </div>
-          <div class="popup popup__form_activeContact">
-            <div class="form__activeContact">
-              <a href="#" class="form__activeContact_closeBtn">Search</a>
-              <div class="form__activeContact_avatar">
-                <img src="./img/background/wallpaper.png" alt="Avatar" />
-              </div>
-              <h3 class="form__activeContact_title">Adam Erickson</h3>
-              <div class="form__activeContact_groupBtns">
-                <div class="button button__message">
-                  <img src="./icons/contacts/messageIcon.svg" alt="Message" />
-                  <p>Message</p>
-                </div>
-                <div class="button button__call">
-                  <img src="./icons/contacts/callIconBlue.svg" alt="Call" />
-                  <p>Call</p>
-                </div>
-                <div class="button button__facetime">
-                  <img src="./icons/contacts/facetimeIcon.svg" alt="Facetime" />
-                  <p>Facetime</p>
-                </div>
-                <div class="button button__email">
-                  <img src="./icons/contacts/emailIcon.svg" alt="Email" />
-                  <p>Facetime</p>
-                </div>
-                <div class="button button__pay">
-                  <img src="./icons/contacts/payIcon.svg" alt="Pay" />
-                  <p>Pay</p>
-                </div>
-              </div>
-              <div class="form__activeContact_info">
-                <div class="info__block number">
-                  <div class="number__mobile">
-                    <h4 class="number__title">Mobile</h4>
-                    <a href="tel:3195550115" class="number__telephone"
-                      >(319) 555-0115</a
-                    >
+                        <div class="icon__text_grey">Favorites</div>
+                     </div>
                   </div>
-                  <div class="number__home">
-                    <h4 class="number__title">Home</h4>
-                    <a href="tel:4055550128" class="number__telephone"
-                      >(405) 555-0128</a
-                    >
-                  </div>
-                </div>
-                <div class="info__block email">
-                  <div>
-                    <h3 class="info__title">Email</h3>
+                  <div class="icon__block recent">
+                     <div class="icon icon__contactsBottomAction">
+                        <svg
+                           width="26"
+                           height="26"
+                           viewBox="0 0 26 26"
+                           fill="none"
+                           xmlns="http://www.w3.org/2000/svg"
+                        >
+                           <path
+                              d="M13 25.2622C19.8115 25.2622 25.4512 19.6226 25.4512 12.811C25.4512 6.01172 19.7993 0.359863 12.9878 0.359863C6.18848 0.359863 0.548828 6.01172 0.548828 12.811C0.548828 19.6226 6.20068 25.2622 13 25.2622ZM6.61572 14.1294C6.12744 14.1294 5.76123 13.7632 5.76123 13.2749C5.76123 12.7988 6.12744 12.4326 6.61572 12.4326H12.1455V5.04736C12.1455 4.57129 12.5117 4.20508 12.9878 4.20508C13.4639 4.20508 13.8423 4.57129 13.8423 5.04736V13.2749C13.8423 13.7632 13.4639 14.1294 12.9878 14.1294H6.61572Z"
+                              fill="#757575"
+                           />
+                        </svg>
 
-                    <div class="email__address">
-                      2118 Thornridge Cir. Syracuse, Connecticut 35624
-                    </div>
+                        <div class="icon__text_grey">Recent</div>
+                     </div>
                   </div>
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1500.9215462967168!2d-76.18876753808222!3d43.03330715094304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f15185b98fef%3A0xd374ea9a67074e7d!2sDunkin&#39;!5e0!3m2!1suk!2sua!4v1682679296216!5m2!1suk!2sua"
-                    class="email__map"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
-                </div>
-                <div class="info__block notes">
-                  <textarea
-                    placeholder="Notes"
-                    name="notes"
-                    class="notes__textarea"
-                  ></textarea>
-                </div>
-              </div>
+                  <div class="icon__block contacts">
+                     <div class="icon icon__contactsBottomAction">
+                        <svg
+                           width="28"
+                           height="29"
+                           viewBox="0 0 28 29"
+                           fill="none"
+                           xmlns="http://www.w3.org/2000/svg"
+                        >
+                           <path
+                              d="M14 27.2622C20.8115 27.2622 26.4512 21.6226 26.4512 14.811C26.4512 8.01172 20.7993 2.35986 13.9878 2.35986C7.18848 2.35986 1.54883 8.01172 1.54883 14.811C1.54883 21.6226 7.20068 27.2622 14 27.2622ZM14 18.9736C10.3257 18.9736 7.50586 20.2798 6.26074 21.7446C4.625 19.9136 3.63623 17.4844 3.63623 14.811C3.63623 9.06152 8.22607 4.43506 13.9878 4.43506C19.7495 4.43506 24.3638 9.06152 24.376 14.811C24.3882 17.4966 23.3872 19.9258 21.7393 21.7568C20.5063 20.292 17.6743 18.9736 14 18.9736ZM14 16.8984C16.3438 16.9229 18.187 14.9209 18.187 12.2964C18.187 9.83057 16.3438 7.77979 14 7.77979C11.6562 7.77979 9.80078 9.83057 9.81299 12.2964C9.8252 14.9209 11.6562 16.874 14 16.8984Z"
+                              fill="#828282"
+                           />
+                        </svg>
+
+                        <div class="icon__text_grey">Contacts</div>
+                     </div>
+                  </div>
+                  <div class="icon__block keypad">
+                     <div class="icon icon__contactsBottomAction">
+                        <svg
+                           width="25"
+                           height="24"
+                           viewBox="0 0 25 24"
+                           fill="none"
+                           xmlns="http://www.w3.org/2000/svg"
+                        >
+                           <path
+                              d="M12.5 7.0625C14.4165 7.0625 16.0156 5.47559 16.0156 3.54688C16.0156 1.61816 14.4165 0.03125 12.5 0.043457C10.5713 0.0556641 8.97217 1.61816 8.97217 3.54688C8.97217 5.47559 10.5713 7.0625 12.5 7.0625ZM21.3501 7.0625C23.2788 7.0625 24.8535 5.47559 24.8535 3.54688C24.8535 1.61816 23.2788 0.03125 21.3501 0.043457C19.4214 0.0556641 17.8467 1.61816 17.8467 3.54688C17.8467 5.47559 19.4214 7.0625 21.3501 7.0625ZM3.6377 7.05029C5.56641 7.05029 7.14111 5.47559 7.14111 3.55908C7.14111 1.64258 5.56641 0.043457 3.6377 0.043457C1.70898 0.043457 0.134277 1.64258 0.134277 3.55908C0.134277 5.47559 1.70898 7.05029 3.6377 7.05029ZM12.5 15.3389C14.4165 15.3389 16.0156 13.752 16.0156 11.8232C16.0156 9.90674 14.4165 8.30762 12.5 8.31982C10.5713 8.33203 8.97217 9.90674 8.97217 11.8232C8.97217 13.752 10.5713 15.3389 12.5 15.3389ZM3.6377 15.3389C5.56641 15.3389 7.14111 13.752 7.14111 11.8232C7.14111 9.90674 5.56641 8.30762 3.6377 8.31982C1.70898 8.33203 0.134277 9.90674 0.134277 11.8232C0.134277 13.752 1.70898 15.3389 3.6377 15.3389ZM21.3501 15.3389C23.2788 15.3389 24.8535 13.752 24.8535 11.8232C24.8535 9.90674 23.2788 8.30762 21.3501 8.31982C19.4214 8.33203 17.8467 9.90674 17.8467 11.8232C17.8467 13.752 19.4214 15.3389 21.3501 15.3389ZM3.6377 23.6152C5.56641 23.6152 7.14111 22.0283 7.14111 20.0996C7.14111 18.1831 5.56641 16.5962 3.6377 16.5962C1.70898 16.5962 0.134277 18.1831 0.134277 20.0996C0.134277 22.0283 1.70898 23.6152 3.6377 23.6152ZM12.5 23.6152C14.4165 23.6152 16.0156 22.0283 16.0156 20.0996C16.0156 18.1831 14.4165 16.5962 12.5 16.5962C10.5713 16.5962 8.97217 18.1831 8.97217 20.0996C8.97217 22.0283 10.5713 23.6152 12.5 23.6152ZM21.3501 23.6152C23.2788 23.6152 24.8535 22.0283 24.8535 20.0996C24.8535 18.1831 23.2788 16.5962 21.3501 16.5962C19.4214 16.5962 17.8467 18.1831 17.8467 20.0996C17.8467 22.0283 19.4214 23.6152 21.3501 23.6152Z"
+                              fill="#9D9D9D"
+                           />
+                        </svg>
+
+                        <div class="icon__text_grey">Keypad</div>
+                     </div>
+                  </div>
+                  <div class="icon__block voicemail">
+                     <div class="icon icon__contactsBottomAction">
+                        <svg
+                           width="39"
+                           height="18"
+                           viewBox="0 0 39 18"
+                           fill="none"
+                           xmlns="http://www.w3.org/2000/svg"
+                        >
+                           <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M29.9008 15.0587C26.7039 15.0587 24.1032 12.4164 24.1032 9.16829C24.1032 5.9202 26.7039 3.27783 29.9008 3.27783C33.0977 3.27783 35.6984 5.9202 35.6984 9.16829C35.6984 12.4164 33.0977 15.0587 29.9008 15.0587ZM3.30162 9.16829C3.30162 5.9202 5.90232 3.27783 9.09919 3.27783C12.2961 3.27783 14.8968 5.9202 14.8968 9.16829C14.8968 12.4164 12.2961 15.0587 9.09919 15.0587C5.90232 15.0587 3.30162 12.4164 3.30162 9.16829ZM29.9008 0.939331C25.4356 0.939331 21.8016 4.63154 21.8016 9.16829C21.8016 11.4773 22.7459 13.5628 24.2583 15.0587H14.7427C16.2541 13.5628 17.1984 11.4773 17.1984 9.16829C17.1984 4.63154 13.5644 0.939331 9.09919 0.939331C4.63398 0.939331 1 4.63154 1 9.16829C1 13.705 4.63398 17.3972 9.09919 17.3972H29.9008C34.366 17.3972 38 13.705 38 9.16829C38 4.63154 34.366 0.939331 29.9008 0.939331Z"
+                              fill="#9D9D9D"
+                           />
+                           <path
+                              d="M24.2583 15.0587V15.3087H24.8665L24.4341 14.881L24.2583 15.0587ZM14.7427 15.0587L14.5668 14.8811L14.1348 15.3087H14.7427V15.0587ZM29.9008 14.8087C26.8458 14.8087 24.3532 12.2821 24.3532 9.16829H23.8532C23.8532 12.5507 26.5621 15.3087 29.9008 15.3087V14.8087ZM24.3532 9.16829C24.3532 6.05451 26.8458 3.52783 29.9008 3.52783V3.02783C26.5621 3.02783 23.8532 5.78589 23.8532 9.16829H24.3532ZM29.9008 3.52783C32.9559 3.52783 35.4484 6.05451 35.4484 9.16829H35.9484C35.9484 5.78589 33.2395 3.02783 29.9008 3.02783V3.52783ZM35.4484 9.16829C35.4484 12.2821 32.9559 14.8087 29.9008 14.8087V15.3087C33.2395 15.3087 35.9484 12.5507 35.9484 9.16829H35.4484ZM3.55162 9.16829C3.55162 6.05451 6.04413 3.52783 9.09919 3.52783V3.02783C5.76052 3.02783 3.05162 5.78589 3.05162 9.16829H3.55162ZM9.09919 3.52783C12.1543 3.52783 14.6468 6.05451 14.6468 9.16829H15.1468C15.1468 5.78589 12.4379 3.02783 9.09919 3.02783V3.52783ZM14.6468 9.16829C14.6468 12.2821 12.1543 14.8087 9.09919 14.8087V15.3087C12.4379 15.3087 15.1468 12.5507 15.1468 9.16829H14.6468ZM9.09919 14.8087C6.04413 14.8087 3.55162 12.2821 3.55162 9.16829H3.05162C3.05162 12.5507 5.76052 15.3087 9.09919 15.3087V14.8087ZM29.9008 0.689331C25.2938 0.689331 21.5516 4.49723 21.5516 9.16829H22.0516C22.0516 4.76585 25.5774 1.18933 29.9008 1.18933V0.689331ZM21.5516 9.16829C21.5516 11.5468 22.5246 13.6955 24.0825 15.2365L24.4341 14.881C22.9672 13.43 22.0516 11.4078 22.0516 9.16829H21.5516ZM24.2583 14.8087H14.7427V15.3087H24.2583V14.8087ZM14.9186 15.2364C16.4754 13.6955 17.4484 11.5468 17.4484 9.16829H16.9484C16.9484 11.4078 16.0328 13.4301 14.5668 14.8811L14.9186 15.2364ZM17.4484 9.16829C17.4484 4.49723 13.7062 0.689331 9.09919 0.689331V1.18933C13.4226 1.18933 16.9484 4.76585 16.9484 9.16829H17.4484ZM9.09919 0.689331C4.49218 0.689331 0.75 4.49723 0.75 9.16829H1.25C1.25 4.76585 4.77578 1.18933 9.09919 1.18933V0.689331ZM0.75 9.16829C0.75 13.8393 4.49218 17.6472 9.09919 17.6472V17.1472C4.77578 17.1472 1.25 13.5707 1.25 9.16829H0.75ZM9.09919 17.6472H29.9008V17.1472H9.09919V17.6472ZM29.9008 17.6472C34.5078 17.6472 38.25 13.8393 38.25 9.16829H37.75C37.75 13.5707 34.2242 17.1472 29.9008 17.1472V17.6472ZM38.25 9.16829C38.25 4.49723 34.5078 0.689331 29.9008 0.689331V1.18933C34.2242 1.18933 37.75 4.76585 37.75 9.16829H38.25Z"
+                              fill="#9D9D9D"
+                           />
+                        </svg>
+
+                        <div class="icon__text_grey">Voicemail</div>
+                     </div>
+                  </div>
+               </footer>
+               <div class="popup popup__form_newContact">
+                  <div class="form__newContact_info">
+                     <a href="#" class="form__newContact_cancel">Cancel</a>
+                     <h3 class="form__newContact_title">New contact</h3>
+                     <div class="form__newContact_done">Done</div>
+                  </div>
+                  <div class="form__newContact_avatar">
+                     <img
+                        src="./icons/contacts/newContactIcon.svg"
+                        alt="Avatar"
+                     />
+                  </div>
+                  <form action="#" class="form__newContact_inputs">
+                     <input
+                        placeholder="First name"
+                        type="text"
+                        class="input input__firstName"
+                     />
+                     <input
+                        placeholder="Last name"
+                        type="text"
+                        class="input input__lastName"
+                     />
+                     <input
+                        placeholder="Company"
+                        type="text"
+                        class="input input__company"
+                     />
+                     <input
+                        placeholder="Tel-number"
+                        type="text"
+                        class="input input__telephone"
+                     />
+                     <input
+                        placeholder="Email"
+                        type="text"
+                        class="input input__email"
+                     />
+                  </form>
+                  <a href="index.html" class="mockup__homeIndicator"></a>
+               </div>
+               <div class="popup popup__form_activeContact">
+                  <div class="form__activeContact">
+                     <a href="#" class="form__activeContact_closeBtn">Search</a>
+                     <div class="form__activeContact_avatar">
+                        <img
+                           src="./img/background/wallpaper.png"
+                           alt="Avatar"
+                        />
+                     </div>
+                     <h3 class="form__activeContact_title">Adam Erickson</h3>
+                     <div class="form__activeContact_groupBtns">
+                        <div class="button button__message">
+                           <img
+                              src="./icons/contacts/messageIcon.svg"
+                              alt="Message"
+                           />
+                           <p>Message</p>
+                        </div>
+                        <div class="button button__call">
+                           <img
+                              src="./icons/contacts/callIconBlue.svg"
+                              alt="Call"
+                           />
+                           <p>Call</p>
+                        </div>
+                        <div class="button button__facetime">
+                           <img
+                              src="./icons/contacts/facetimeIcon.svg"
+                              alt="Facetime"
+                           />
+                           <p>Facetime</p>
+                        </div>
+                        <div class="button button__email">
+                           <img
+                              src="./icons/contacts/emailIcon.svg"
+                              alt="Email"
+                           />
+                           <p>Facetime</p>
+                        </div>
+                        <div class="button button__pay">
+                           <img src="./icons/contacts/payIcon.svg" alt="Pay" />
+                           <p>Pay</p>
+                        </div>
+                     </div>
+                     <div class="form__activeContact_info">
+                        <div class="info__block number">
+                           <div class="number__mobile">
+                              <h4 class="number__title">Mobile</h4>
+                              <a href="tel:3195550115" class="number__telephone"
+                                 >(319) 555-0115</a
+                              >
+                           </div>
+                           <div class="number__home">
+                              <h4 class="number__title">Home</h4>
+                              <a href="tel:4055550128" class="number__telephone"
+                                 >(405) 555-0128</a
+                              >
+                           </div>
+                        </div>
+                        <div class="info__block email">
+                           <div>
+                              <h3 class="info__title">Email</h3>
+
+                              <div class="email__address">
+                                 2118 Thornridge Cir. Syracuse, Connecticut
+                                 35624
+                              </div>
+                           </div>
+                           <iframe
+                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1500.9215462967168!2d-76.18876753808222!3d43.03330715094304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f15185b98fef%3A0xd374ea9a67074e7d!2sDunkin&#39;!5e0!3m2!1suk!2sua!4v1682679296216!5m2!1suk!2sua"
+                              class="email__map"
+                              allowfullscreen=""
+                              loading="lazy"
+                              referrerpolicy="no-referrer-when-downgrade"
+                           ></iframe>
+                        </div>
+                        <div class="info__block notes">
+                           <textarea
+                              placeholder="Notes"
+                              name="notes"
+                              class="notes__textarea"
+                           ></textarea>
+                        </div>
+                     </div>
+                  </div>
+                  <a href="index.html" class="mockup__homeIndicator"></a>
+               </div>
+               <a href="index.html" class="mockup__homeIndicator"></a>
             </div>
-            <a href="index.html" class="mockup__homeIndicator"></a>
-          </div>
-          <a href="index.html" class="mockup__homeIndicator"></a>
-        </div>
-      </div>
-    </section>
-    <script defer src="./js/main.min.js"></script>
-  </body>
+         </div>
+      </section>
+      <script type="module" src="/script.js"></script>
+   </body>
 </html>
