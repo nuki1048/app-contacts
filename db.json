@@ -1,5 +1,66 @@
 {
-  "posts": [{ "id": 1, "title": "json-server", "author": "typicode" }],
-  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
-  "profile": { "name": "typicode" }
+  "category": [],
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Andrey Asperch",
+      "tel": "+12345678901",
+      "email": "wjbmjuqy@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Anna Avalaavoma",
+      "tel": "+19876543210",
+      "email": "ylwzqtnv@yahoo.com"
+    },
+    {
+      "id": 3,
+      "name": "Antony Brilka",
+      "tel": "+15555555555",
+      "email": "itomprbg@hotmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Skott Brown",
+      "tel": "+18888888888",
+      "email": "hyjchfka@outlook.com"
+    },
+    {
+      "id": 5,
+      "name": "John Bohemian",
+      "tel": "+14151234567",
+      "email": "osxetnlp@gmail.com"
+    },
+    {
+      "id": 7,
+      "name": "Vena Celencia",
+      "tel": "+13055555555",
+      "email": "rqfdmlbw@hotmail.com"
+    },
+    {
+      "id": 8,
+      "name": "Charles Cat",
+      "tel": "+18005551212",
+      "email": "ylwzqtnv@yahoo.com"
+    },
+    {
+      "id": 9,
+      "name": "John Dilan",
+      "tel": "+18775551212",
+      "email": "nxahpylg@gmail.com"
+    },
+    {
+      "id": 10,
+      "name": "Bella Dolce",
+      "tel": "+12025550100",
+      "email": "yquzvftc@yahoo.com"
+    },
+    {
+      "name": "Nikita  Chabaniuk",
+      "tel": "+1123123123",
+      "company": "ONU",
+      "email": "nik456618@gmail.com",
+      "id": 31
+    }
+  ]
 }
