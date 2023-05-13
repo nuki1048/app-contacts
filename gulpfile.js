@@ -233,7 +233,7 @@ function watch() {
 const build = gulp.series(
   // clean,
   html,
-  gulp.parallel(styles, "build-js", img, icons, fonts),
+  gulp.parallel(styles, "build-prod-js", img, icons, fonts),
   watch
 );
 
