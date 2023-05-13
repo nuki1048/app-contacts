@@ -7,13 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4a699f8-370f-415e-b711-152f892f27dd" name="Changes" comment="fix">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_05_2023_20_17__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_05_2023_20_17__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/contacts.html" afterDir="false" />
+    <list default="true" id="b4a699f8-370f-415e-b711-152f892f27dd" name="Changes" comment="Changed the modal windows a little (adds type and name fields to inputs), also added the ability to add CEO (completely forgot about it😅😅😅)">
       <change beforePath="$PROJECT_DIR$/src/js/modules/date/Date.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/modules/date/Date.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/modules/phoneDirectory/PhoneDirectory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/modules/phoneDirectory/PhoneDirectory.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +83,7 @@
       <workItem from="1683997933303" duration="51000" />
       <workItem from="1683998169582" duration="218000" />
       <workItem from="1683998436592" duration="168000" />
-      <workItem from="1683999383410" duration="1396000" />
+      <workItem from="1683999383410" duration="1693000" />
     </task>
     <task id="LOCAL-00001" summary="The main part of the scripts is ready, all the necessary classes have been made, there was also a separation of Human and Organization (Now these two classes are something like abstract, and the Contact and Company classes, which have UI methods, are already inherited from them). Made logic for companies, now there is separation of companies and contacts. In the companies section, if there is a user with the same company, he will be added to the list of employees of this company. Also made tabs, now you can switch between tabs if needed. A bunch more fixes are in order, but that's later">
       <created>1683997544683</created>
@@ -111,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683998480154</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changed the modal windows a little (adds type and name fields to inputs), also added the ability to add CEO (completely forgot about it😅😅😅)">
+      <created>1684000999291</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684000999291</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +171,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="The main part of the scripts is ready, all the necessary classes have been made, there was also a separation of Human and Organization (Now these two classes are something like abstract, and the Contact and Company classes, which have UI methods, are already inherited from them). Made logic for companies, now there is separation of companies and contacts. In the companies section, if there is a user with the same company, he will be added to the list of employees of this company. Also made tabs, now you can switch between tabs if needed. A bunch more fixes are in order, but that's later" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="Changed the modal windows a little (adds type and name fields to inputs), also added the ability to add CEO (completely forgot about it)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the modal windows a little (adds type and name fields to inputs), also added the ability to add CEO (completely forgot about it)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
