@@ -32,6 +32,8 @@ export default class PhoneDirectory {
 
   #companyName;
 
+  #companyCEO;
+
   #companyWebsite;
 
   #companyAddress;
@@ -65,6 +67,7 @@ export default class PhoneDirectory {
     this.#companyAddress = "";
     this.#companyName = "";
     this.#companyWebsite = "";
+    this.#companyCEO = "";
     this.#FilterCompanies = "";
 
     if (this.#model === "" || this.#category === "") {
@@ -123,27 +126,27 @@ export default class PhoneDirectory {
                <input
                required
                   placeholder="Work tel-number"
-                  type="text"
+                  type="tel"
                   name="telephone"
                   class="input input__telephone_work"
                />
                <input
                required
                   placeholder="Tel-number"
-                  type="text"
-                  name="telephone"
+                  type="tel"
+                  name="homeTelephone"
                   class="input input__telephone"
                />
                <input
                required
                   placeholder="Email"
-                  type="text"
+                  type="email"
                   name="email"
                   class="input input__email"
                />
                  <div class="checkbox-wrapper-4">
-                    <input type="checkbox" id="morning" class="inp-cbx input__gender">
-                    <label for="morning" class="cbx"><span>
+                    <input type="checkbox" id="gender" class="inp-cbx input__gender">
+                    <label for="gender" class="cbx"><span>
                     <svg height="10px" width="12px">
                       
                     </svg></span><span>Gender(default male)</span></label>
@@ -248,32 +251,44 @@ export default class PhoneDirectory {
          <input
             placeholder="Name of company"
             type="text"
+            name="nameCompany"
             class="input input__companyName"
          />
          <input
             placeholder="Web-site"
-            type="text"
+            type="url"
+            name="website"
             class="input input__website"
          />
          <input
             placeholder="Address"
             type="text"
+            name="address"
             class="input input__companyAddress"
          />
          <input
             placeholder="Tel-number"
-            type="text"
+            type="tel"
+            name="tel"
             class="input input__companyTelephone"
          />
          <input
             placeholder="Email"
-            type="text"
+            type="email"
             class="input input__companyEmail"
+            name="email"
+         />
+          <input
+            placeholder="CEO"
+            type="text"
+            class="input input__CEO"
+            name="ceo"
          />
          <input
             placeholder="Employees, example: Nikita KKK, Yuri AAA, ..."
             type="text"
             class="input input__companyEmployees"
+            name="employees"
          />
       </form>
       <a href="#" class="mockup__homeIndicator"></a>`;
@@ -314,6 +329,7 @@ export default class PhoneDirectory {
           employees: this.#companyEmployees
             ? this.#companyEmployees.split(",")
             : [],
+          CEO: this.#companyCEO,
           id,
         });
         httpService(
@@ -332,9 +348,12 @@ export default class PhoneDirectory {
             this.#CompanyEmail,
             this.#CompanyTelephone,
             this.#companyEmployees.split(","),
+            this.#companyAddress,
+            this.#companyWebsite,
+            this.#companyCEO,
             id
           ).renderToDOM();
-          this.resetValues();
+          // this.resetValues();
         } catch (error) {
           throw new Error(error);
         }
@@ -389,7 +408,9 @@ export default class PhoneDirectory {
         break;
       case "input__companyEmployees":
         this.#companyEmployees = event.target.value;
-
+        break;
+      case "input__CEO":
+        this.#companyCEO = event.target.value;
         break;
       default:
         throw new Error("Error,not found this input");
@@ -403,17 +424,16 @@ export default class PhoneDirectory {
     this.#telephone = [null, null]; // Перший це робочий телефон, другий це личний щось на кшталт
     this.#email = "";
     this.#filter = "";
-    this.#data = [];
     this.#gender = "Male";
     this.#favorites = false;
 
     // Company info
-    this.#dataCompanies = [];
     this.#CompanyEmail = "";
     this.#CompanyTelephone = "";
     this.#companyAddress = "";
     this.#companyName = "";
     this.#companyWebsite = "";
+    this.#companyCEO = "";
     this.#FilterCompanies = "";
   }
   // eslint-disable-next-line no-unused-vars

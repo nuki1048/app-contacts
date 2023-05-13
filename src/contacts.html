@@ -212,44 +212,87 @@
           <!-- Modals example  -->
           <!-- <div class="popup popup__form_newContact">
                   <div class="form__newContact_info">
-                     <a href="#" class="form__newContact_cancel">Cancel</a>
-                     <h3 class="form__newContact_title">New contact</h3>
-                     <div class="form__newContact_done">Done</div>
-                  </div>
-                  <div class="form__newContact_avatar">
-                     <img
-                        src="./icons/contacts/newContactIcon.svg"
-                        alt="Avatar"
-                     />
-                  </div>
-                  <form action="#" class="form__newContact_inputs">
-                     <input
-                        placeholder="First name"
-                        type="text"
-                        class="input input__firstName"
-                     />
-                     <input
-                        placeholder="Last name"
-                        type="text"
-                        class="input input__lastName"
-                     />
-                     <input
-                        placeholder="Company"
-                        type="text"
-                        class="input input__company"
-                     />
-                     <input
-                        placeholder="Tel-number"
-                        type="text"
-                        class="input input__telephone"
-                     />
-                     <input
-                        placeholder="Email"
-                        type="text"
-                        class="input input__email"
-                     />
-                  </form>
-                  <a href="index.html" class="mockup__homeIndicator"></a>
+               <a href="#" class="form__newContact_cancel">Cancel</a>
+               <h3 class="form__newContact_title">New contact</h3>
+               <a  href="#"  class="form__newContact_done">
+                  Done
+               </a>
+            </div>
+            <div class="form__newContact_avatar">
+               <img
+                  src="./icons/contacts/newContactIcon.svg"
+                  alt="Avatar"
+               />
+            </div>
+            <form action="#" class="form__newContact_inputs">
+               <input
+               required
+                  placeholder="First name"
+                  type="text"
+                  name="firstName"
+                  class="input input__firstName"
+               />
+               <input
+               required
+                  placeholder="Last name"
+                  type="text"
+                  name="lastName"
+                  class="input input__lastName"
+               />
+               <input
+               required
+                  placeholder="Company"
+                  type="text"
+                  name="company"
+                  class="input input__company"
+               />
+               <input
+               required
+                  placeholder="Work tel-number"
+                  type="tel"
+                  name="telephone"
+                  class="input input__telephone_work"
+               />
+               <input
+               required
+                  placeholder="Tel-number"
+                  type="tel"
+                  name="homeTelephone"
+                  class="input input__telephone"
+               />
+               <input
+               required
+                  placeholder="Email"
+                  type="email"
+                  name="email"
+                  class="input input__email"
+               />
+                 <div class="checkbox-wrapper-4">
+                    <input type="checkbox" id="gender" class="inp-cbx input__gender">
+                    <label for="gender" class="cbx"><span>
+                    <svg height="10px" width="12px">
+
+                    </svg></span><span>Gender(default male)</span></label>
+                    <svg class="inline-svg">
+                      <symbol viewBox="0 0 12 10" id="check-4">
+                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                      </symbol>
+                    </svg>
+                </div>
+                <div class="checkbox-wrapper-4">
+                    <input type="checkbox" id="favorites" class="inp-cbx input__favorites">
+                    <label for="favorites" class="cbx"><span>
+                    <svg height="10px" width="12px">
+
+                    </svg></span><span>Favorites?</span></label>
+                    <svg class="inline-svg">
+                      <symbol viewBox="0 0 12 10" id="check-4">
+                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                      </symbol>
+                    </svg>
+                </div>
+               </form>
+            <a href="#" class="mockup__homeIndicator"></a>
                </div> -->
           <!-- <div class="popup popup__form_activeContact">
                   <div class="form__activeContact">
@@ -356,30 +399,47 @@
                      <input
                         placeholder="Name of company"
                         type="text"
-                        class="input input__firstName"
+                        name="nameCompany"
+                        class="input input__companyName"
                      />
                      <input
                         placeholder="Web-site"
-                        type="text"
+                        type="url"
+                        name="website"
                         class="input input__website"
                      />
                      <input
-                        placeholder="Company"
+                        placeholder="Address"
                         type="text"
-                        class="input input__company"
+                        name="address"
+                        class="input input__companyAddress"
                      />
                      <input
                         placeholder="Tel-number"
-                        type="text"
-                        class="input input__telephone"
+                        type="tel"
+                        name="tel"
+                        class="input input__companyTelephone"
                      />
                      <input
                         placeholder="Email"
+                        type="email"
+                        class="input input__companyEmail"
+                        name="email"
+                     />
+                      <input
+                        placeholder="CEO"
                         type="text"
-                        class="input input__email"
+                        class="input input__CEO"
+                        name="ceo"
+                     />
+                     <input
+                        placeholder="Employees, example: Nikita KKK, Yuri AAA, ..."
+                        type="text"
+                        class="input input__companyEmployees"
+                        name="employees"
                      />
                   </form>
-                  <a href="index.html" class="mockup__homeIndicator"></a>
+                  <a href="#" class="mockup__homeIndicator"></a>
                </div> -->
           <!-- <div class="popup popup__form_activeCompany">
                   <div class="form__activeCompany">
