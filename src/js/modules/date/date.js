@@ -31,6 +31,7 @@ class DateHome {
       }
    }
 
+   // eslint-disable-next-line class-methods-use-this
    #monthToString(monthNum) {
       switch (monthNum) {
          case 1:
