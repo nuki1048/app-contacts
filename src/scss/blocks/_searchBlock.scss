@@ -1,3 +1,4 @@
+//noinspection CssUnusedSymbol
 .search {
   &__block {
     &-mainInput {
@@ -15,6 +16,8 @@
         color: #878b95;
         padding: 8px 0 8px 37px;
       }
+
+      //noinspection ALL,CssUnknownTarget
       &::after {
         content: "";
         width: 16px;
@@ -28,7 +31,8 @@
       }
     }
     &-addBtn,
-    &-moreBtn {
+    &-moreBtn,
+    &-addCompanyBtn {
       padding: 15px;
       position: relative;
       display: flex;
@@ -47,7 +51,8 @@
         background: darken($color: #4f4f4f, $amount: 5);
       }
     }
-    &-addBtn {
+    &-addBtn,
+    &-addCompanyBtn {
       &::before {
         content: "";
         display: block;

@@ -84,7 +84,7 @@
       text-align: center;
       letter-spacing: 0.1px;
     }
-    &::hover {
+    &:hover {
       background: lighten($color: rgba(245, 245, 245, 0.15), $amount: 1);
     }
   }

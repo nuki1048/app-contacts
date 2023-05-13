@@ -1,0 +1,142 @@
+.contacts {
+  &__companies {
+    width: 100%;
+    margin-top: 45px;
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+
+    &_searchBlock {
+      display: flex;
+      width: 342px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &_profile {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      //noinspection CssUnusedSymbol
+      .profile {
+        &__avatar {
+          margin-right: 15px;
+          cursor: pointer;
+        }
+        &__info {
+          &_title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.38px;
+            color: #ffffff;
+          }
+          &_counters {
+            display: flex;
+            width: 130px;
+            justify-content: space-between;
+          }
+          &_counter {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: -0.08px;
+            color: rgba(235, 235, 245, 0.6);
+          }
+          &_activeCounter {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: -0.08px;
+            color: #34c759;
+          }
+        }
+        &__btnMore {
+          margin-left: auto;
+          background: transparent;
+          color: #fff;
+          border: none;
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &_grid {
+      margin-top: 57px;
+      width: 100%;
+      height: 500px;
+      display: flex;
+      overflow: hidden;
+      flex-direction: column;
+      align-items: center;
+      list-style: none;
+      gap: 11px;
+      &:hover {
+        overflow-y: scroll;
+      }
+
+      //noinspection CssUnusedSymbol
+      .company {
+        cursor: pointer;
+        padding: 10px 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        &__avatar {
+          width: 34px;
+          height: 34px;
+          border-radius: 100%;
+          object-fit: cover;
+          margin-right: 14px;
+        }
+        &__title {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 21px;
+        }
+        &__actions {
+          margin-left: auto;
+          width: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          &_more {
+            display: block;
+            font-size: 20px;
+            text-decoration: none;
+            color: #fff;
+            transition: 0.5s all;
+            &:hover {
+              border-bottom: 2px solid #fff;
+            }
+          }
+          // .actions {
+          //    &__callBtn,
+          //    &__messageBtn {
+          //       width: 37px;
+          //       height: 37px;
+          //       border-radius: 100%;
+          //       display: flex;
+          //       justify-content: center;
+          //       align-items: center;
+          //       cursor: pointer;
+          //    }
+          //    &__callBtn {
+          //       background: rgba(52, 199, 89, 0.1);
+          //    }
+          //    &__messageBtn {
+          //       background: rgba(0, 122, 255, 0.1);
+          //    }
+          // }
+        }
+      }
+    }
+  }
+}

@@ -1,43 +1,38 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable class-methods-use-this */
 export default class Clock {
-  constructor(timeAttribute, lockScreenTimeAttribute) {
-    this.timeSelector = document.querySelector(timeAttribute);
-    this.lockScreenSelector = document.querySelector(lockScreenTimeAttribute);
-    this.dateStart = new Date();
-  }
+   #clockAttribute;
 
-  getZero(num) {
-    if (num >= 0 && num < 10) {
-      return `0${num}`;
-    }
-    return num;
-  }
+   #date;
 
-  updateClock(selector) {
-    this.dateStart = new Date();
-    const hours = this.getZero(this.dateStart.getHours());
-    const minutes = this.getZero(this.dateStart.getMinutes());
-    selector.textContent = "";
-    selector.textContent = `${hours}:${minutes}`;
-  }
+   constructor(clockAttribute) {
+      try {
+         this.#clockAttribute = document.querySelector(clockAttribute);
+      } catch (error) {
+         /* empty */
+      }
+      this.#date = new Date();
+   }
 
-  checkScreens = () => {
-    if (
-      window.getComputedStyle(this.lockScreenSelector.parentNode).display !==
-      "none"
-    ) {
+   getZero(num) {
+      if (num >= 0 && num < 10) {
+         return `0${num}`;
+      }
+      return num;
+   }
+
+   updateClock(selector) {
+      this.dateStart = new Date();
+      const hours = this.getZero(this.dateStart.getHours());
+      const minutes = this.getZero(this.dateStart.getMinutes());
+      selector.textContent = "";
+      selector.textContent = `${hours}:${minutes}`;
+   }
+
+   render() {
+      this.updateClock(this.#clockAttribute);
       setInterval(() => {
-        this.updateClock(this.lockScreenSelector);
+         this.updateClock(this.#clockAttribute);
       }, 1000);
-    } else {
-      setInterval(() => {
-        this.updateClock(this.timeSelector);
-      }, 1000);
-    }
-  };
-
-  render() {
-    setInterval(this.checkScreens, 500);
-  }
+   }
 }
