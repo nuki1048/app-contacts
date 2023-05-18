@@ -76,18 +76,7 @@ export default class PhoneDirectory {
   }
 
   #addNewContact() {
-    const btn = document.querySelector(".search__block-addBtn");
-    try {
-      btn.addEventListener("click", (e) => {
-        if (e.target.classList.contains("search__block-addBtn")) {
-          const popup = document.createElement("div");
-          popup.classList.add(
-            "popup",
-            "popup__form_newContact",
-            "animate__animated",
-            "animate__fadeInDown"
-          );
-          popup.innerHTML = `
+    const html  = `
             <div class="form__newContact_info">
                <a href="#" class="form__newContact_cancel">Cancel</a>
                <h3 class="form__newContact_title">New contact</h3>
@@ -169,7 +158,19 @@ export default class PhoneDirectory {
                     </svg>
                 </div>
                </form>
-            <a href="#" class="mockup__homeIndicator"></a>`;
+            <a href="#" class="mockup__homeIndicator"></a>`
+    const btn = document.querySelector(".search__block-addBtn");
+    try {
+      btn.addEventListener("click", (e) => {
+        if (e.target.classList.contains("search__block-addBtn")) {
+          const popup = document.createElement("div");
+          popup.classList.add(
+            "popup",
+            "popup__form_newContact",
+            "animate__animated",
+            "animate__fadeInDown"
+          );
+          popup.innerHTML = html;
           document.querySelector(".mockup__contacts").append(popup);
 
           popup.style.display = "block";
@@ -295,17 +296,22 @@ export default class PhoneDirectory {
     const popup = document.createElement("div");
     popup.classList.add("popup", "popup__form_newCompany", "animate__animated");
     popup.innerHTML = html;
+    document.querySelector(".mockup__contacts").append(popup);
     try {
       document
         .querySelector(".search__block-addCompanyBtn")
         .addEventListener("click", () => {
           popup.classList.add("animate__fadeInDown");
-          document.querySelector(".mockup__contacts").append(popup);
           popup.style.display = "block";
         });
     } catch (e) {
       /* empty */
     }
+
+
+    popup.addEventListener("input", (e) => {
+      this.#validate(e);
+    });
     // eslint-disable-next-line consistent-return
     popup.addEventListener("click", (e) => {
       if (
@@ -318,8 +324,8 @@ export default class PhoneDirectory {
           popup.remove();
         }, 500);
       } else if (e.target.classList.contains("form__newCompany_done")) {
-        const id = Math.floor(Math.random() * (100 - 1) + 1);
 
+        const id = Math.floor(Math.random() * (100 - 1) + 1);
         const body = JSON.stringify({
           companyName: this.#companyName,
           tel: this.#CompanyTelephone,
@@ -332,16 +338,16 @@ export default class PhoneDirectory {
           CEO: this.#companyCEO,
           id,
         });
-        httpService(
-          `https://645636932e41ccf16916a499.mockapi.io/companies`,
-          "POST",
-          body
-        );
         popup.classList.remove("animate__fadeInDown");
         popup.classList.add("animate__fadeOutUp");
         setTimeout(() => {
           popup.remove();
         }, 500);
+        httpService(
+          `https://645636932e41ccf16916a499.mockapi.io/companies`,
+          "POST",
+          body
+        );
         try {
           new Company(
             this.#companyName,
@@ -353,15 +359,13 @@ export default class PhoneDirectory {
             this.#companyCEO,
             id
           ).renderToDOM();
-          // this.resetValues();
+          this.resetValues();
         } catch (error) {
           throw new Error(error);
         }
       }
     });
-    popup.addEventListener("input", (e) => {
-      this.#validate(e);
-    });
+
   }
 
   #validate(event) {
