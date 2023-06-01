@@ -44,7 +44,9 @@ export default class Human {
   }
 
   set name(newName) {
-    this.#name = newName;
+    if (newName !== "") {
+      this.#name = newName;
+    }
   }
 
   get gender() {
@@ -52,7 +54,9 @@ export default class Human {
   }
 
   set gender(newGender) {
-    this.#gender = newGender;
+    if (newGender !== "") {
+      this.#gender = newGender;
+    }
   }
 
   get email() {
@@ -60,7 +64,9 @@ export default class Human {
   }
 
   set email(newEmail) {
-    this.#email = newEmail;
+    if (newEmail !== "") {
+      this.#email = newEmail;
+    }
   }
 
   get company() {
@@ -68,7 +74,9 @@ export default class Human {
   }
 
   set company(newCompany) {
-    this.#company = newCompany;
+    if (newCompany !== "") {
+      this.#company = newCompany;
+    }
   }
 
   get telephone() {
@@ -76,7 +84,9 @@ export default class Human {
   }
 
   set telephone(newTelephone) {
-    this.#telephone = newTelephone;
+    if (newTelephone !== "") {
+      this.#telephone = newTelephone;
+    }
   }
 
   get firstTelephone() {
@@ -84,7 +94,9 @@ export default class Human {
   }
 
   set firstTelephone(newNumber) {
-    this.#telephone[0] = newNumber;
+    if (newNumber !== "") {
+      this.#telephone[0] = newNumber;
+    }
   }
 
   get secondTelephone() {
@@ -92,7 +104,9 @@ export default class Human {
   }
 
   set secondTelephone(newNumber) {
-    this.#telephone[1] = newNumber;
+    if (newNumber !== "") {
+      this.#telephone[1] = newNumber;
+    }
   }
 
   destroy() {

@@ -47,7 +47,9 @@ class Organization {
   }
 
   set companyName(newName) {
-    this.#companyName = newName;
+    if (newName !== "") {
+      this.#companyName = newName;
+    }
   }
 
   get email() {
@@ -55,7 +57,9 @@ class Organization {
   }
 
   set email(newEmail) {
-    this.#email = newEmail;
+    if (newEmail !== "") {
+      this.#email = newEmail;
+    }
   }
 
   get telephone() {
@@ -63,7 +67,9 @@ class Organization {
   }
 
   set telephone(newTelephone) {
-    this.#telephone = newTelephone;
+    if (newTelephone !== "") {
+      this.#telephone = newTelephone;
+    }
   }
 
   get employeesList() {
@@ -71,7 +77,9 @@ class Organization {
   }
 
   set employeesList(newEmployeesList) {
-    this.#employeesList = newEmployeesList;
+    if (newEmployeesList !== "") {
+      this.#employeesList = newEmployeesList;
+    }
   }
 
   get address() {
@@ -79,7 +87,9 @@ class Organization {
   }
 
   set address(newAddress) {
-    this.#address = newAddress;
+    if (newAddress !== "") {
+      this.#address = newAddress;
+    }
   }
 
   get website() {
@@ -87,7 +97,9 @@ class Organization {
   }
 
   set website(newWebsite) {
-    this.#website = newWebsite;
+    if (newWebsite !== "") {
+      this.#website = newWebsite;
+    }
   }
 
   get CEO() {
@@ -95,7 +107,9 @@ class Organization {
   }
 
   set CEO(newCEO) {
-    this.#CEO = newCEO;
+    if (newCEO !== "") {
+      this.#CEO = newCEO;
+    }
   }
 
   destroy() {

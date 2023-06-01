@@ -10,7 +10,9 @@ class Telephone {
   }
 
   set telephone(newTelephone) {
-    this.#telephone = newTelephone;
+    if (newTelephone !== "") {
+      this.#telephone = newTelephone;
+    }
   }
 
   validatePhoneNumber() {
